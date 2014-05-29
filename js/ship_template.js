@@ -77,14 +77,43 @@ function loadAllTables(callback) {
     dbContext.loadTables(jsonTables, yamlTables, callback);
 }
 
+var globalDb = null;
 function onTablesLoaded(db) {
-    //getShip(db, 17740);
-    //getShip(db, 590);
-    //getShip(db, 29337); // augoror navy issue
-    //getShip(db, 617);  // 1619 = market group, 2 = race, 237 = group // echo
-    //getShip(db, 3532); // echelon
-    //getShip(db, 12038); // purifier
-    getShip(db, 11567); // avatar
+    $("#js-status-div").hide();
+    $("#js-build-form").show();
+    $("#js-ship-name").removeAttr("disabled");
+    $("#js-build-button").removeAttr("disabled");
+    globalDb = db;
+}
+
+function buildShipDescription(shipName) {
+    var db = globalDb;
+    $("#js-status-div").text("Generating ...");
+    $("#js-status-div").show();
+    var shipID = getShipID(db, shipName.trim());
+    if (shipID == null) {
+        $("#js-status-div").text("Ship not found");
+    } else {
+        var override = {};
+        var fields = ['roles', 'faction', 'ecmprio', 'grouping', 'forumlinks', 'wikireferences', 'externallinks', 'highlights1', 'highlights2', 'highlights3', 'highlights4'];
+        for (var i = 0; i < fields.length; i++) {
+            var fieldID = "#js-" + fields[i] + "-input";
+            if ($(fieldID).val().length > 0) {
+                override[fields[i]] = $(fieldID).val();
+            }
+        }
+        // Call this async, so the Generating message can be shown
+        var callback = function(db, shipID, override) {
+            return function() { getShip(db, shipID, override); $("#js-status-div").hide(); }
+        }(db, shipID, override);
+        setTimeout(callback, 0);
+    }
+}
+
+function getShipID(db, shipName) {
+    var columnEntry = db['trnTranslationColumns']({'tableName': "dbo.invTypes", 'columnName': "typeName"}).first();
+    var translationEntry = db['trnTranslations']({'text': shipName, 'languageID': 'EN-US', 'tcID': columnEntry.tcID}).first();
+    return translationEntry.keyID;
 }
 
 function dbFind(db, tableName, filterObj) {
@@ -106,6 +135,7 @@ function getVariations(db, typeID) {
     var parentTypeID = getParentType(db, typeID);
     if (parentTypeID == null) {
         matches = db['invMetaTypes']({'parentTypeID': typeID});
+
         matches.each(function(type) { types.push(type.typeID); });
     } else {
         matches = db['invMetaTypes']({'parentTypeID': parentTypeID});
@@ -209,7 +239,6 @@ function getSkillRequirements(db, obj) {
             var skill = getSkill(db, skillID);
             var requiredSubSkills = getSkillRequirements(db, skill);
             var skillName = getTranslation(db, "dbo.invTypes", "typeName", skillID);
-            console.log('required: ' + skillName);
             required.push({'skill': skill, 'skillID': skillID, 'skillName': skillName, 'skillLevel': skillLevel, 'skillRequirements': requiredSubSkills});
         }
     }
@@ -323,10 +352,9 @@ function formatTime(seconds) {
     return rv;
 }
 
-function getShip(db, shipId) {
-    console.log('in getShip');
+function getShip(db, shipID, override) {
     var obj = {};
-    db['dgmTypeAttributes']({'typeID': shipId}).each(function (typeAttribute) {
+    db['dgmTypeAttributes']({'typeID': shipID}).each(function (typeAttribute) {
         var attributeType = db['dgmAttributeTypes']({'attributeID': typeAttribute.attributeID}).first();
         var attributeValue = (typeAttribute.valueInt != null) ? typeAttribute.valueInt : typeAttribute.valueFloat;
         var unitName = '';
@@ -337,7 +365,7 @@ function getShip(db, shipId) {
             }
         }
         var valStr = (attributeValue != null) ? attributeValue.toLocaleString() : '';
-        console.log(attributeType.attributeName + ": " + valStr);
+        //console.log(attributeType.attributeName + ": " + valStr);
         switch (attributeType.attributeName) {
         case "powerOutput": {
             obj['powergrid'] = valStr + " " + unitName;
@@ -495,17 +523,18 @@ function getShip(db, shipId) {
         }
         }
     })
-    obj['shipid'] = shipId;
-    obj['shipname'] = getTranslation(db, "dbo.invTypes", "typeName", shipId);
+    obj['shipid'] = shipID;
+    obj['shipname'] = getTranslation(db, "dbo.invTypes", "typeName", shipID);
     obj['shipimg'] = obj['shipname'] + '.jpg';
     obj['caption'] = obj['shipname'];
 
-    var type = db['invTypes']({'typeID': shipId}).first();
+    var type = db['invTypes']({'typeID': shipID}).first();
     obj['mass'] = type.mass.toLocaleString() + " kg";
     obj['volume'] = type.volume.toLocaleString() + " m&#179;";
     obj['cargohold'] = type.capacity.toLocaleString() + " m&#179;";
     obj['class'] = getTranslation(db, "dbo.invGroups", "groupName", type.groupID);
-    obj['info'] = cleanHtml(type.description.replace("\r\n", "<br>"));
+    console.log(type.description);
+    obj['info'] = cleanHtml(type.description.replace(new RegExp("\r\n", "g"), "<br>"));
     obj['race'] = getTranslation(db, "dbo.chrRaces", "raceName", type.raceID);
 
     var warpTime = -Math.log(0.25) * type.mass * parseFloat(obj['inertia']) / 1000000;
@@ -552,7 +581,7 @@ function getShip(db, shipId) {
         obj['grouping'] = marketGroupName;
     }
 
-    var variationIDs = getVariations(db, shipId);
+    var variationIDs = getVariations(db, shipID);
     var variations = "";
     for (var i = 0; i < variationIDs.length; i++) {
         if (i != 0) {
@@ -566,7 +595,7 @@ function getShip(db, shipId) {
         variations = "<i>none</i>";
     }
     obj['variations'] = variations;
-    var parentTypeID = getParentType(db, shipId);
+    var parentTypeID = getParentType(db, shipID);
     if (parentTypeID != null) {
         var parentType = db['invTypes']({'typeID': parentTypeID}).first();
         obj['hulltype'] = parentType.typeName + " Class";
@@ -574,7 +603,7 @@ function getShip(db, shipId) {
         obj['hulltype'] = type.typeName + " Class";
     }
 
-    var traits = db['invTraits']({'typeID': shipId});
+    var traits = db['invTraits']({'typeID': shipID});
     var traitsArray = [];
     traits.each(function(trait) { traitsArray.push(trait);});
     traitsArray.sort(compareTraits);
@@ -598,12 +627,30 @@ function getShip(db, shipId) {
 
     obj['totaltraintime'] = getTrainingTime(requiredSkills);
 
-    $("#content").html(buildString(obj));
+    obj['roles'] = 'unspecified';
+    obj['ecmprio'] = '0';
+    obj['forumlinks'] = '';
+    obj['wikireferences'] = ''
+    obj['externallinks'] = ''
+    obj['highlights1'] = '';
+    obj['highlights2'] = '';
+    obj['highlights3'] = '';
+    obj['highlights4'] = '';
+
+    console.log(override);
+    if (override != null) {
+        for (var key in override) {
+            obj[key] = override[key];
+        }
+    }
+
+    $("#js-content").text(buildString(obj));
     console.log(obj);
 }
 
 function buildString(obj) {
     str = '\
+<onlyinclude>{{{{#if:{{{mode|}}}|{{#switch:{{{mode}}}|box=ShipBoxLarge|#default=ShipBoxTooltip}}|ShipArticle}} <!--  Template marker : DON\'T EDIT LINE -->\n\
 	<!-----------------------------------------------------------\n\
 	*	SHIP ATTRIBUTES SECTION (last update : ' + new Date().toLocaleDateString() + ')\n\
 	-------------------------------------------------------------\n\
@@ -621,11 +668,11 @@ function buildString(obj) {
 	|hulltype=' + obj['hulltype'] + '\n\
 	|faction=' + obj['faction'] + '\n\
 	|race=' + obj['race'] + '\n\
-	|roles=unspecified\n\
+	|roles=' + obj['roles'] + '\n\
 	|variations=' + obj['variations'] + '\n\
 	|tech=' + obj['tech'] + '\n\
 \n\
-	|ecmprio=0 <!-- 0 = none, 1 = low, 2 = normal, 3 = high, 4 = highest -->\n\
+	|ecmprio=' + obj['ecmprio'] + ' <!-- 0 = none, 1 = low, 2 = normal, 3 = high, 4 = highest -->\n\
 \n\
 	|powergrid=' + obj['powergrid'] + '\n\
 	|cpu=' + obj['cpu'] + '\n\
@@ -665,8 +712,18 @@ function buildString(obj) {
 \n\
 	|reqskills=' + obj['reqskills'] + '\n\
 	|totaltraintime=' + obj['totaltraintime'] + '\n\
-	';
-	console.log(str);
+\n\
+	|forumlinks=' + obj['forumlinks'] + '\n\
+	|wikireferences=' + obj['wikireferences'] + '\n\
+	|externallinks=' + obj['externallinks'] + '\n\
+\n\
+	|highlights1=' + obj['highlights1'] + '\n\
+	|highlights2=' + obj['highlights2'] + '\n\
+	|highlights3=' + obj['highlights3'] + '\n\
+	|highlights4=' + obj['highlights4'] + '\n\
+\n\
+}}</onlyinclude> <!-- Template marker : DON\'T EDIT LINE -->';
+
 	return str;
 }
 

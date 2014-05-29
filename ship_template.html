@@ -6,7 +6,26 @@
         <script src="js/ship_template.js"></script>
     </head>
     <body onload="onPageLoad()">
-    <pre id="content">
+    <div id="js-status-div">Loading Data ...</div>
+    <form id="js-build-form" class="display:none" action="#" onsubmit="return false;">
+        Ship Name: <input id="js-ship-name" type="text" onchange="buildShipDescription($('#js-ship-name').val())" disabled/><br>
+        Overrides
+        <table>
+            <tr><td>Roles</td><td><input id="js-roles-input" type="text"/></td></tr>
+            <tr><td>Faction</td><td><input id="js-faction-input" type="text"/></td></tr>
+            <tr><td>ECM Priority</td><td><input id="js-ecmprio-input" type="text"/></td></tr>
+            <tr><td>Grouping</td><td><input id="js-grouping-input" type="text"/></td></tr>
+            <tr><td>forumlinks</td><td><input id="js-forumlinks-input" type="text"/></td></tr>
+            <tr><td>wikireferences</td><td><input id="js-wikireferences-input" type="text"/></td></tr>
+            <tr><td>externallinks</td><td><input id="js-externallinks-input" type="text"/></td></tr>
+            <tr><td>highlights1</td><td><input id="js-highlights1-input" type="text"/></td></tr>
+            <tr><td>highlights2</td><td><input id="js-highlights2-input" type="text"/></td></tr>
+            <tr><td>highlights3</td><td><input id="js-highlights3-input" type="text"/></td></tr>
+            <tr><td>highlights4</td><td><input id="js-highlights4-input" type="text"/></td></tr>
+        </table>
+        <input type="button" id="js-build-button" onclick="buildShipDescription($('#js-ship-name').val())" value="Build Template" disabled/><br>
+    </form>
+    <pre id="js-content">
 
     </pre>
     </body>
