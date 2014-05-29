@@ -111,7 +111,7 @@ function buildShipDescription(shipName) {
 
 function getShipID(db, shipName) {
     var columnEntry = db['trnTranslationColumns']({'tableName': "dbo.invTypes", 'columnName': "typeName"}).first();
-    var translationEntry = db['trnTranslations']({'text': shipName, 'languageID': 'EN-US', 'tcID': columnEntry.tcID}).first();
+    var translationEntry = db['trnTranslations']({'text': {'likenocase':shipName}, 'languageID': 'EN-US', 'tcID': columnEntry.tcID}).first();
     return translationEntry.keyID;
 }
 
