@@ -644,7 +644,7 @@ function getShip(db, shipID, override) {
         }
     }
 
-    $("#js-content").text(buildString(obj));
+    $("#js-content").val(buildString(obj));
     console.log(obj);
 }
 
