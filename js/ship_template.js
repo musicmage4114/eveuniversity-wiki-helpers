@@ -79,7 +79,7 @@ function loadAllTables(callback) {
 
 var globalDb = null;
 function onTablesLoaded(db) {
-    $("#js-status-div").hide();
+    $("#js-status-div").text("Ready");
     $("#js-build-form").show();
     $("#js-ship-name").removeAttr("disabled");
     $("#js-build-button").removeAttr("disabled");
@@ -89,7 +89,6 @@ function onTablesLoaded(db) {
 function buildShipDescription(shipName) {
     var db = globalDb;
     $("#js-status-div").text("Generating ...");
-    $("#js-status-div").show();
     var shipID = getShipID(db, shipName.trim());
     if (shipID == null) {
         $("#js-status-div").text("Ship not found");
@@ -104,7 +103,7 @@ function buildShipDescription(shipName) {
         }
         // Call this async, so the Generating message can be shown
         var callback = function(db, shipID, override) {
-            return function() { getShip(db, shipID, override); $("#js-status-div").hide(); }
+            return function() { getShip(db, shipID, override); $("#js-status-div").text("Ready"); }
         }(db, shipID, override);
         setTimeout(callback, 0);
     }
