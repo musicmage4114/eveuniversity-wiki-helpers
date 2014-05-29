@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <script src="js/jquery-2.1.1.js"></script>
+        <script src="js/js-yaml.js"></script>
+        <script src="js/taffy.js"></script>
+        <script src="js/ship_template.js"></script>
+    </head>
+    <body onload="onPageLoad()">
+    <table>
+        <tr><td><b>Status: </b></td><td><div id="js-status-div">Loading Data ...</div></td></tr>
+    </table>
+    <br>
+    <form id="js-build-form" class="display:none" action="#" onsubmit="return false;">
+        <table>
+            <tr><td><b>Ship Name: </b></td>
+                <td><input id="js-ship-name" type="text" onchange="buildShipDescription($('#js-ship-name').val())" disabled/></td>
+                <td><input type="button" id="js-build-button" onclick="buildShipDescription($('#js-ship-name').val())" value="Build Template" disabled/></td>
+            </tr>
+        </table>
+        <h4>Overrides</h4>
+        <p>Many of the fields on the wiki are not available from the game data. For these fields, passing one of the options below will override the default.</p>
+        <table>
+            <tr><td>Roles</td><td><input id="js-roles-input" type="text" size="80"/></td><td></td></tr>
+            <tr><td>Faction</td><td><input id="js-faction-input" type="text" size="80"/></td><td><small>This should be overridden for non-empire ships</small></tr>
+            <tr><td>ECM Priority</td><td><input id="js-ecmprio-input" type="text" size="80"/></td><td><small>0 = none, 1 = low, 2 = normal, 3 = high, 4 = highest</small></td></tr>
+            <tr><td>Grouping</td><td><input id="js-grouping-input" type="text" size="80"/></td><td><small>This can generally be determined from the market group</small></td></tr>
+            <tr><td>forumlinks</td><td><input id="js-forumlinks-input" type="text" size="80"/></td><td></td></tr>
+            <tr><td>wikireferences</td><td><input id="js-wikireferences-input" type="text" size="80"/></td><td></td></tr>
+            <tr><td>externallinks</td><td><input id="js-externallinks-input" type="text" size="80"/></td><td></td></tr>
+            <tr><td>highlights1</td><td><input id="js-highlights1-input" type="text" size="80"/></td><td></td></tr>
+            <tr><td>highlights2</td><td><input id="js-highlights2-input" type="text" size="80"/></td><td></td></tr>
+            <tr><td>highlights3</td><td><input id="js-highlights3-input" type="text" size="80"/></td><td></td></tr>
+            <tr><td>highlights4</td><td><input id="js-highlights4-input" type="text" size="80"/></td><td></td></tr>
+        </table>
+    </form>
+    <h4>Output</h4>
+    <p>Copy and paste this into the wiki page.</p>
+    <textarea id="js-content" rows="40" cols="80"></textarea>
+    </body>
+</html>
