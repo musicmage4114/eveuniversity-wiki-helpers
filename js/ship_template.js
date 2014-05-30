@@ -225,7 +225,7 @@ function getSkill(db, skillID) {
         }
         }
     });
-    console.log(obj);
+    //console.log(obj);
     return obj;
 }
 
@@ -351,6 +351,13 @@ function formatTime(seconds) {
     return rv;
 }
 
+function getHoldType(attributeName) {
+    var holdPattern = new RegExp("special(.*)(Bay|Hold)Capacity");
+    var holdType = attributeName.replace(holdPattern, "$1");
+    var casePattern = new RegExp("(.)([A-Z]+)", "g");
+    return holdType.replace(casePattern, "$1 $2");
+}
+
 function getShip(db, shipID, override) {
     var obj = {};
     db['dgmTypeAttributes']({'typeID': shipID}).each(function (typeAttribute) {
@@ -415,19 +422,19 @@ function getShip(db, shipID, override) {
             break;
         }
         case "armorEmDamageResonance": {
-            obj['armorem'] = (100 - 100*attributeValue);
+            obj['armorem'] = Math.round(100 - 100*attributeValue);
             break;
         }
         case "armorExplosiveDamageResonance": {
-            obj['armorexp'] = (100 - 100*attributeValue);
+            obj['armorexp'] = Math.round(100 - 100*attributeValue);
             break;
         }
         case "armorKineticDamageResonance": {
-            obj['armorkin'] = (100 - 100*attributeValue);
+            obj['armorkin'] = Math.round(100 - 100*attributeValue);
             break;
         }
         case "armorThermalDamageResonance": {
-            obj['armortherm'] = (100 - 100*attributeValue);
+            obj['armortherm'] = Math.round(100 - 100*attributeValue);
             break;
         }
         case "shieldCapacity": {
@@ -435,19 +442,19 @@ function getShip(db, shipID, override) {
             break;
         }
         case "shieldEmDamageResonance": {
-            obj['shieldem'] = (100 - 100*attributeValue);
+            obj['shieldem'] = Math.round(100 - 100*attributeValue);
             break;
         }
         case "shieldExplosiveDamageResonance": {
-            obj['shieldexp'] = (100 - 100*attributeValue);
+            obj['shieldexp'] = Math.round(100 - 100*attributeValue);
             break;
         }
         case "shieldKineticDamageResonance": {
-            obj['shieldkin'] = (100 - 100*attributeValue);
+            obj['shieldkin'] = Math.round(100 - 100*attributeValue);
             break;
         }
         case "shieldThermalDamageResonance": {
-            obj['shieldtherm'] = (100 - 100*attributeValue);
+            obj['shieldtherm'] = Math.round(100 - 100*attributeValue);
             break;
         }
         case "maxVelocity": {
@@ -520,6 +527,25 @@ function getShip(db, shipID, override) {
             obj['_' + attributeType.attributeName] = attributeValue;
             break;
         }
+        case "specialFuelBayCapacity":
+        case "specialOreHoldCapacity":
+        case "specialGasHoldCapacity":
+        case "specialMineralHoldCapacity":
+        case "specialSalvageHoldCapacity":
+        case "specialShipHoldCapacity":
+        case "specialSmallShipHoldCapacity":
+        case "specialMediumShipHoldCapacity":
+        case "specialLargeShipHoldCapacity":
+        case "specialIndustrialShipHoldCapacity":
+        case "specialAmmoHoldCapacity":
+        case "specialCommandCenterHoldCapacity":
+        case "specialPlanetaryCommoditiesHoldCapacity":
+        case "specialMaterialBayCapacity":
+        case "specialQuafeHoldCapacity":
+        {
+            obj['extrahold'] = valStr + " " + unitName;
+            obj['extraholdtype'] = getHoldType(attributeType.attributeName);
+        }
         }
     })
     obj['shipid'] = shipID;
@@ -532,7 +558,7 @@ function getShip(db, shipID, override) {
     obj['volume'] = type.volume.toLocaleString() + " m&#179;";
     obj['cargohold'] = type.capacity.toLocaleString() + " m&#179;";
     obj['class'] = getTranslation(db, "dbo.invGroups", "groupName", type.groupID);
-    console.log(type.description);
+    //console.log(type.description);
     obj['info'] = cleanHtml(type.description.replace(new RegExp("\r\n", "g"), "<br>"));
     obj['race'] = getTranslation(db, "dbo.chrRaces", "raceName", type.raceID);
 
@@ -626,6 +652,13 @@ function getShip(db, shipID, override) {
 
     obj['totaltraintime'] = getTrainingTime(requiredSkills);
 
+    if (obj['extrahold'] == null) {
+        obj['extrahold'] = '';
+    }
+    if (obj['extraholdtype'] == null) {
+        obj['extraholdtype'] = '';
+    }
+
     obj['roles'] = 'unspecified';
     obj['ecmprio'] = '0';
     obj['forumlinks'] = '';
@@ -636,7 +669,7 @@ function getShip(db, shipID, override) {
     obj['highlights3'] = '';
     obj['highlights4'] = '';
 
-    console.log(override);
+    //console.log(override);
     if (override != null) {
         for (var key in override) {
             obj[key] = override[key];
@@ -681,6 +714,8 @@ function buildString(obj) {
  | mass=' + obj['mass'] + '\n\
  | volume=' + obj['volume'] + '\n\
  | cargohold=' + obj['cargohold'] + '\n\
+ | extrahold=' + obj['extrahold'] + '\n\
+ | extraholdtype=' + obj['extraholdtype'] + '\n\
  | dronebay=' + obj['dronebay'] + '\n\
  | bandwidth=' + obj['bandwidth'] + '\n\
  | info=' + obj['info'] + '\n\
