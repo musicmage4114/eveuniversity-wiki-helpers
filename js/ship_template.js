@@ -172,9 +172,6 @@ function getTraitDescription(db, trait) {
         return trait.bonusText;
     }
     var unitName = db['eveUnits']({'unitID': trait.unitID}).first().displayName;
-    if (unitName == "Bonus") { // the game will say 10+ bonus, but i prefer +10 bonus
-        return unitName + trait.bonus + " " + trait.bonusText;
-    }
     if (trait.bonus != null) {
         return trait.bonus + unitName + " " + trait.bonusText;
     } else {
