@@ -168,14 +168,13 @@ function compareTraits(t1, t2) {
 }
 
 function getTraitDescription(db, trait) {
-    if (trait.bonus == 0) {
-        return trait.bonusText;
+    //console.log(trait);
+    if (trait.bonus == 0 || trait.bonus == null) {
+        return "&bull;" + trait.bonusText;
     }
     var unitName = db['eveUnits']({'unitID': trait.unitID}).first().displayName;
     if (trait.bonus != null) {
         return trait.bonus + unitName + " " + trait.bonusText;
-    } else {
-        return trait.bonusText;
     }
 }
 
@@ -419,19 +418,19 @@ function getShip(db, shipID, override) {
             break;
         }
         case "armorEmDamageResonance": {
-            obj['armorem'] = Math.round(100 - 100*attributeValue);
+            obj['armorem'] = (100 - 100*attributeValue).toLocaleString();
             break;
         }
         case "armorExplosiveDamageResonance": {
-            obj['armorexp'] = Math.round(100 - 100*attributeValue);
+            obj['armorexp'] = (100 - 100*attributeValue).toLocaleString();
             break;
         }
         case "armorKineticDamageResonance": {
-            obj['armorkin'] = Math.round(100 - 100*attributeValue);
+            obj['armorkin'] = (100 - 100*attributeValue).toLocaleString();
             break;
         }
         case "armorThermalDamageResonance": {
-            obj['armortherm'] = Math.round(100 - 100*attributeValue);
+            obj['armortherm'] = (100 - 100*attributeValue).toLocaleString();
             break;
         }
         case "shieldCapacity": {
@@ -439,19 +438,19 @@ function getShip(db, shipID, override) {
             break;
         }
         case "shieldEmDamageResonance": {
-            obj['shieldem'] = Math.round(100 - 100*attributeValue);
+            obj['shieldem'] = (100 - 100*attributeValue).toLocaleString();
             break;
         }
         case "shieldExplosiveDamageResonance": {
-            obj['shieldexp'] = Math.round(100 - 100*attributeValue);
+            obj['shieldexp'] = (100 - 100*attributeValue).toLocaleString();
             break;
         }
         case "shieldKineticDamageResonance": {
-            obj['shieldkin'] = Math.round(100 - 100*attributeValue);
+            obj['shieldkin'] = (100 - 100*attributeValue).toLocaleString();
             break;
         }
         case "shieldThermalDamageResonance": {
-            obj['shieldtherm'] = Math.round(100 - 100*attributeValue);
+            obj['shieldtherm'] = (100 - 100*attributeValue).toLocaleString();
             break;
         }
         case "maxVelocity": {
@@ -554,7 +553,7 @@ function getShip(db, shipID, override) {
     obj['mass'] = type.mass.toLocaleString() + " kg";
     obj['volume'] = type.volume.toLocaleString() + " m&#179;";
     obj['cargohold'] = type.capacity.toLocaleString() + " m&#179;";
-    obj['class'] = getTranslation(db, "dbo.invGroups", "groupName", type.groupID);
+    obj['class'] = getTranslation(db, "dbo.invGroups", "groupName", type.groupID); // not used in template
     //console.log(type.description);
     obj['info'] = cleanHtml(type.description.replace(new RegExp("\r\n", "g"), "<br>"));
     obj['race'] = getTranslation(db, "dbo.chrRaces", "raceName", type.raceID);
@@ -574,15 +573,13 @@ function getShip(db, shipID, override) {
     }
 
     obj['tech'] = '';
+    if (obj['_techLevel'] != null && parseInt(obj['_techLevel']) != 1) {
+        obj['tech'] = obj['_techLevel'];
+    }
     if (obj['_metaLevel'] != null) {
         if (parseInt(obj['_metaLevel']) > 5) {
-            obj['tech'] = 'F';
-        } else if (parseInt(obj['_metaLevel']) == 5) {
-            obj['tech'] = '2';
-        }
-    } else if (obj['_techLevel'] != null) {
-        if (parseInt(obj['_techLevel']) == 2) {
-            obj['tech'] = '2';
+            // todo: the zephyr, revenant, apotheosis, and interbus shuttle don't have the faction marker
+            obj['tech'] = 'F'; // override the tech level for faction gear
         }
     }
 
@@ -659,8 +656,8 @@ function getShip(db, shipID, override) {
     obj['roles'] = 'unspecified';
     obj['ecmprio'] = '0';
     obj['forumlinks'] = '';
-    obj['wikireferences'] = ''
-    obj['externallinks'] = ''
+    obj['wikireferences'] = '';
+    obj['externallinks'] = '[http://wiki.eveonline.com/en/wiki/' + escape(obj['shipname']) + ' ' + obj['shipname'] + ' on Eve Online Wiki]';
     obj['highlights1'] = '';
     obj['highlights2'] = '';
     obj['highlights3'] = '';
