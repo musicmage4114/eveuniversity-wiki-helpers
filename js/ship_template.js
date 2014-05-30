@@ -419,19 +419,19 @@ function getShip(db, shipID, override) {
             break;
         }
         case "armorEmDamageResonance": {
-            obj['armorem'] = Math.round(100 - 100*attributeValue);
+            obj['armorem'] = (100 - 100*attributeValue).toLocaleString();
             break;
         }
         case "armorExplosiveDamageResonance": {
-            obj['armorexp'] = Math.round(100 - 100*attributeValue);
+            obj['armorexp'] = (100 - 100*attributeValue).toLocaleString();
             break;
         }
         case "armorKineticDamageResonance": {
-            obj['armorkin'] = Math.round(100 - 100*attributeValue);
+            obj['armorkin'] = (100 - 100*attributeValue).toLocaleString();
             break;
         }
         case "armorThermalDamageResonance": {
-            obj['armortherm'] = Math.round(100 - 100*attributeValue);
+            obj['armortherm'] = (100 - 100*attributeValue).toLocaleString();
             break;
         }
         case "shieldCapacity": {
@@ -439,19 +439,19 @@ function getShip(db, shipID, override) {
             break;
         }
         case "shieldEmDamageResonance": {
-            obj['shieldem'] = Math.round(100 - 100*attributeValue);
+            obj['shieldem'] = (100 - 100*attributeValue).toLocaleString();
             break;
         }
         case "shieldExplosiveDamageResonance": {
-            obj['shieldexp'] = Math.round(100 - 100*attributeValue);
+            obj['shieldexp'] = (100 - 100*attributeValue).toLocaleString();
             break;
         }
         case "shieldKineticDamageResonance": {
-            obj['shieldkin'] = Math.round(100 - 100*attributeValue);
+            obj['shieldkin'] = (100 - 100*attributeValue).toLocaleString();
             break;
         }
         case "shieldThermalDamageResonance": {
-            obj['shieldtherm'] = Math.round(100 - 100*attributeValue);
+            obj['shieldtherm'] = (100 - 100*attributeValue).toLocaleString();
             break;
         }
         case "maxVelocity": {
@@ -554,7 +554,7 @@ function getShip(db, shipID, override) {
     obj['mass'] = type.mass.toLocaleString() + " kg";
     obj['volume'] = type.volume.toLocaleString() + " m&#179;";
     obj['cargohold'] = type.capacity.toLocaleString() + " m&#179;";
-    obj['class'] = getTranslation(db, "dbo.invGroups", "groupName", type.groupID);
+    obj['class'] = getTranslation(db, "dbo.invGroups", "groupName", type.groupID); // not used in template
     //console.log(type.description);
     obj['info'] = cleanHtml(type.description.replace(new RegExp("\r\n", "g"), "<br>"));
     obj['race'] = getTranslation(db, "dbo.chrRaces", "raceName", type.raceID);
@@ -659,8 +659,8 @@ function getShip(db, shipID, override) {
     obj['roles'] = 'unspecified';
     obj['ecmprio'] = '0';
     obj['forumlinks'] = '';
-    obj['wikireferences'] = ''
-    obj['externallinks'] = ''
+    obj['wikireferences'] = '';
+    obj['externallinks'] = '[http://wiki.eveonline.com/en/wiki/' + escape(obj['shipname']) + ' ' + obj['shipname'] + ' on Eve Online Wiki]';
     obj['highlights1'] = '';
     obj['highlights2'] = '';
     obj['highlights3'] = '';
