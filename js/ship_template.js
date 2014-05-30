@@ -111,7 +111,7 @@ function buildShipDescription(shipName) {
 
 function getShipID(db, shipName) {
     var columnEntry = db['trnTranslationColumns']({'tableName': "dbo.invTypes", 'columnName': "typeName"}).first();
-    var translationEntry = db['trnTranslations']({'text': {'likenocase':shipName}, 'languageID': 'EN-US', 'tcID': columnEntry.tcID}).first();
+    var translationEntry = db['trnTranslations']({'text': {'isnocase':shipName}, 'languageID': 'EN-US', 'tcID': columnEntry.tcID}).first();
     return translationEntry.keyID;
 }
 
@@ -650,80 +650,74 @@ function getShip(db, shipID, override) {
 function buildString(obj) {
     str = '\
 <onlyinclude>{{{{#if:{{{mode|}}}|{{#switch:{{{mode}}}|box=ShipBoxLarge|#default=ShipBoxTooltip}}|ShipArticle}} <!--  Template marker : DON\'T EDIT LINE -->\n\
-	<!-----------------------------------------------------------\n\
-	*	SHIP ATTRIBUTES SECTION (last update : ' + new Date().toLocaleDateString() + ')\n\
-	-------------------------------------------------------------\n\
-	* on editing the attributes, please make sure that you don\'t\n\
-	* leave/misstype any tags required. please follow the same\n\
-	* format below and edit only the values (after the = sign).\n\
-	------------------------------------------------------------->\n\
-\n\
-	|shipid=' + obj['shipid'] + '\n\
-	|shipimg=' + obj['shipimg'] + '\n\
-	|shipname=' + obj['shipname'] + '\n\
-	|caption=' + obj['caption'] + '\n\
-	|class=' + obj['class'] + '\n\
-	|grouping=' + obj['grouping'] + '\n\
-	|hulltype=' + obj['hulltype'] + '\n\
-	|faction=' + obj['faction'] + '\n\
-	|race=' + obj['race'] + '\n\
-	|roles=' + obj['roles'] + '\n\
-	|variations=' + obj['variations'] + '\n\
-	|tech=' + obj['tech'] + '\n\
-\n\
-	|ecmprio=' + obj['ecmprio'] + ' <!-- 0 = none, 1 = low, 2 = normal, 3 = high, 4 = highest -->\n\
-\n\
-	|powergrid=' + obj['powergrid'] + '\n\
-	|cpu=' + obj['cpu'] + '\n\
-	|capacitor=' + obj['capacitor'] + '\n\
-	|highs=' + obj['highs'] + '\n\
-	|turrets=' + obj['turrets'] + '\n\
-	|launchers=' + obj['launchers'] + '\n\
-	|mediums=' + obj['mediums'] + '\n\
-	|lows=' + obj['lows'] + '\n\
-\n\
-	|mass=' + obj['mass'] + '\n\
-	|volume=' + obj['volume'] + '\n\
-	|cargohold=' + obj['cargohold'] + '\n\
-\n\
-	|dronebay=' + obj['dronebay'] + '\n\
-	|bandwidth=' + obj['bandwidth'] + '\n\
-\n\
-	|info=' + obj['info'] + '\n\
-\n\
-	|bonuses=' + obj['bonuses'] + '\n\
-\n\
-	|structurehp=' + obj['structurehp'] + '\n\
-	|shieldhp=' + obj['shieldhp'] + ' |shieldem=' + obj['shieldem'] + ' |shieldexp=' + obj['shieldexp'] + ' |shieldkin=' + obj['shieldkin'] + ' |shieldtherm=' + obj['shieldtherm'] + '\n\
-	|armorhp=' + obj['armorhp'] + ' |armorem=' + obj['armorem'] + ' |armorexp=' + obj['armorexp'] + ' |armorkin=' + obj['armorkin'] + ' |armortherm=' + obj['armortherm'] + '\n\
-\n\
-	|maxvelocity=' + obj['maxvelocity'] + '\n\
-	|inertia=' + obj['inertia'] + '\n\
-	|warpspeed=' + obj['warpspeed'] + '\n\
-	|warptime=' + obj['warptime'] + '\n\
-\n\
-	|targetrange=' + obj['targetrange'] + '\n\
-	|sigradius=' + obj['sigradius'] + '\n\
-	|maxlockedtargets=' + obj['maxlockedtargets'] + '\n\
-	|sensortype=' + obj['sensortype'] + '\n\
-	|sensorvalue=' + obj['sensorvalue'] + '\n\
-	|scanres=' + obj['scanres'] + '\n\
-\n\
-	|reqskills=' + obj['reqskills'] + '\n\
-	|totaltraintime=' + obj['totaltraintime'] + '\n\
-\n\
-	|forumlinks=' + obj['forumlinks'] + '\n\
-	|wikireferences=' + obj['wikireferences'] + '\n\
-	|externallinks=' + obj['externallinks'] + '\n\
-\n\
-	|highlights1=' + obj['highlights1'] + '\n\
-	|highlights2=' + obj['highlights2'] + '\n\
-	|highlights3=' + obj['highlights3'] + '\n\
-	|highlights4=' + obj['highlights4'] + '\n\
-\n\
+ <!-----------------------------------------------------------\n\
+ * SHIP ATTRIBUTES SECTION (last update : ' + new Date().toLocaleDateString() + ')\n\
+ -------------------------------------------------------------\n\
+ * on editing the attributes, please make sure that you don\'t\n\
+ * leave/misstype any tags required. please follow the same\n\
+ * format below and edit only the values (after the = sign).\n\
+ ------------------------------------------------------------->\n\
+ | shipid=' + obj['shipid'] + '\n\
+ | shipimg=' + obj['shipimg'] + '\n\
+ | shipname=' + obj['shipname'] + '\n\
+ | caption=' + obj['caption'] + '\n\
+ | class=' + obj['class'] + '\n\
+ | grouping=' + obj['grouping'] + '\n\
+ | hulltype=' + obj['hulltype'] + '\n\
+ | faction=' + obj['faction'] + '\n\
+ | race=' + obj['race'] + '\n\
+ | roles=' + obj['roles'] + '\n\
+ | variations=' + obj['variations'] + '\n\
+ | tech=' + obj['tech'] + '\n\
+ | ecmprio=' + obj['ecmprio'] + ' <!-- 0 = none, 1 = low, 2 = normal, 3 = high, 4 = highest -->\n\
+ | powergrid=' + obj['powergrid'] + '\n\
+ | cpu=' + obj['cpu'] + '\n\
+ | capacitor=' + obj['capacitor'] + '\n\
+ | highs=' + obj['highs'] + '\n\
+ | turrets=' + obj['turrets'] + '\n\
+ | launchers=' + obj['launchers'] + '\n\
+ | mediums=' + obj['mediums'] + '\n\
+ | lows=' + obj['lows'] + '\n\
+ | mass=' + obj['mass'] + '\n\
+ | volume=' + obj['volume'] + '\n\
+ | cargohold=' + obj['cargohold'] + '\n\
+ | dronebay=' + obj['dronebay'] + '\n\
+ | bandwidth=' + obj['bandwidth'] + '\n\
+ | info=' + obj['info'] + '\n\
+ | bonuses=' + obj['bonuses'] + '\n\
+ | structurehp=' + obj['structurehp'] + '\n\
+ | shieldhp=' + obj['shieldhp'] + '\n\
+ | shieldem=' + obj['shieldem'] + '\n\
+ | shieldexp=' + obj['shieldexp'] + '\n\
+ | shieldkin=' + obj['shieldkin'] + '\n\
+ | shieldtherm=' + obj['shieldtherm'] + '\n\
+ | armorhp=' + obj['armorhp'] + '\n\
+ | armorem=' + obj['armorem'] + '\n\
+ | armorexp=' + obj['armorexp'] + '\n\
+ | armorkin=' + obj['armorkin'] + '\n\
+ | armortherm=' + obj['armortherm'] + '\n\
+ | maxvelocity=' + obj['maxvelocity'] + '\n\
+ | inertia=' + obj['inertia'] + '\n\
+ | warpspeed=' + obj['warpspeed'] + '\n\
+ | warptime=' + obj['warptime'] + '\n\
+ | targetrange=' + obj['targetrange'] + '\n\
+ | sigradius=' + obj['sigradius'] + '\n\
+ | maxlockedtargets=' + obj['maxlockedtargets'] + '\n\
+ | sensortype=' + obj['sensortype'] + '\n\
+ | sensorvalue=' + obj['sensorvalue'] + '\n\
+ | scanres=' + obj['scanres'] + '\n\
+ | reqskills=' + obj['reqskills'] + '\n\
+ | totaltraintime=' + obj['totaltraintime'] + '\n\
+ | forumlinks=' + obj['forumlinks'] + '\n\
+ | wikireferences=' + obj['wikireferences'] + '\n\
+ | externallinks=' + obj['externallinks'] + '\n\
+ | highlights1=' + obj['highlights1'] + '\n\
+ | highlights2=' + obj['highlights2'] + '\n\
+ | highlights3=' + obj['highlights3'] + '\n\
+ | highlights4=' + obj['highlights4'] + '\n\
 }}</onlyinclude> <!-- Template marker : DON\'T EDIT LINE -->';
 
-	return str;
+ return str;
 }
 
 function onPageLoad() {
