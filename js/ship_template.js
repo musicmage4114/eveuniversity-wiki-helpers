@@ -170,7 +170,7 @@ function compareTraits(t1, t2) {
 function getTraitDescription(db, trait) {
     //console.log(trait);
     if (trait.bonus == 0 || trait.bonus == null) {
-        return "&bull;" + trait.bonusText;
+        return "&bull;&nbsp;" + trait.bonusText;
     }
     var unitName = db['eveUnits']({'unitID': trait.unitID}).first().displayName;
     if (trait.bonus != null) {
