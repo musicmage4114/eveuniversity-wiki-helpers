@@ -45,4 +45,4 @@ def exportTable(outputDir, tableName):
     f.close()
 
 for tableName in getTableNames():
-    exportTable("output", tableName)
+    exportTable("sde", tableName)
