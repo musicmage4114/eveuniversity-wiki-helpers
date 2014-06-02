@@ -186,6 +186,20 @@ function cleanHtml(html) {
     return html;
 }
 
+
+// Function to get and cache a skill attribute - odd construction is to wrap static variable
+var getSkillAttribute = (function () {
+    var globalSkillAttributeCache = {};
+    return function(db, attributeValue) {
+        if (globalSkillAttributeCache[attributeValue] != null) {
+                return globalSkillAttributeCache[attributeValue];
+            }
+            var rv = getTranslation(db, "dbo.dgmAttributeTypes", "displayName", attributeValue);
+            globalSkillAttributeCache[attributeValue] = rv;
+            return rv;
+        }
+    })();
+
 function getSkill(db, skillID) {
     var obj = {};
     db['dgmTypeAttributes']({'typeID': skillID}).each(function (typeAttribute) {
@@ -193,11 +207,11 @@ function getSkill(db, skillID) {
         var attributeValue = (typeAttribute.valueInt != null) ? typeAttribute.valueInt : typeAttribute.valueFloat;
         switch (attributeType.attributeName) {
         case "primaryAttribute": {
-            obj['primaryAttribute'] = getTranslation(db, "dbo.dgmAttributeTypes", "displayName", attributeValue);
+            obj['primaryAttribute'] = getSkillAttribute(db, attributeValue);
             break;
         }
         case "secondaryAttribute": {
-            obj['secondaryAttribute'] = getTranslation(db, "dbo.dgmAttributeTypes", "displayName", attributeValue);
+            obj['secondaryAttribute'] = getSkillAttribute(db, attributeValue);
             break;
         }
         case "skillTimeConstant": {
@@ -354,8 +368,19 @@ function getHoldType(attributeName) {
     return holdType.replace(casePattern, "$1 $2");
 }
 
-function getShip(db, shipID, override) {
+// Set some of the common defaults, in case the attributes are missing
+function getDefaultObject() {
     var obj = {};
+    obj['turrets'] = 0;
+    obj['launchers'] = 0;
+    obj['highs'] = 0;
+    obj['mediums'] = 0;
+    obj['lows'] = 0;
+    return obj;
+}
+
+function getShip(db, shipID, override) {
+    var obj = getDefaultObject();
     db['dgmTypeAttributes']({'typeID': shipID}).each(function (typeAttribute) {
         var attributeType = db['dgmAttributeTypes']({'attributeID': typeAttribute.attributeID}).first();
         var attributeValue = (typeAttribute.valueInt != null) ? typeAttribute.valueInt : typeAttribute.valueFloat;
