@@ -183,6 +183,8 @@ function cleanHtml(html) {
     html = html.replace(fontPattern, "$1");
     var linkPattern = new RegExp("<a[^>]*>(.*?)</a>", "gi");
     html = html.replace(linkPattern, "$1");
+    var urlPattern = new RegExp("<url[^>]*>(.*?)</url>", "gi");
+    html = html.replace(urlPattern, "$1");
     return html;
 }
 
