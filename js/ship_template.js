@@ -698,7 +698,7 @@ function buildString(obj) {
  ------------------------------------------------------------->\n';
     for (var i = 0; i < sortedKeys.length; i++) {
         var key = sortedKeys[i];
-        if (key.indexOf('_') == 0) {
+        if (key.indexOf('_') == 0 || obj[key] == null) {
             continue;
         }
         str = str + ' | ' + key + '=' + obj[key] + '\n';
