@@ -679,11 +679,15 @@ function getShip(db, shipID, override) {
 }
 
 function buildString(obj) {
-    var sortedKeys = [];
-    for (var key in obj) {
-        sortedKeys.push(key);
-    }
-    sortedKeys.sort();
+    var sortedKeys = [
+        "shipid", "shipimg", "shipname", "caption", "class", "grouping", "hulltype", "faction", "race", "roles",
+        "variations", "tech", "ecmprio", "powergrid", "cpu", "capacitor", "highs", "turrets", "launchers", "mediums",
+        "lows", "mass", "volume", "cargohold", "extrahold", "extraholdtype", "dronebay", "bandwidth", "info",
+        "bonuses", "structurehp", "shieldhp", "shieldem", "shieldexp", "shieldkin", "shieldtherm", "armorhp",
+        "armorem", "armorexp", "armorkin", "armortherm", "maxvelocity", "inertia", "warpspeed", "warptime",
+        "targetrange", "sigradius", "maxlockedtargets", "sensortype", "sensorvalue", "scanres", "reqskills",
+        "totaltraintime", "forumlinks", "wikireferences", "externallinks", "highlights1", "highlights2",
+        "highlights3", "highlights4"];
     var str = '<onlyinclude>{{{{#if:{{{mode|}}}|{{#switch:{{{mode}}}|box=ShipBoxLarge|#default=ShipBoxTooltip}}|ShipArticle}} <!--  Template marker : DON\'T EDIT LINE -->\n\
  <!-----------------------------------------------------------\n\
  * SHIP ATTRIBUTES SECTION (last update : ' + new Date().toLocaleDateString() + ')\n\
