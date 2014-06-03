@@ -368,19 +368,8 @@ function getHoldType(attributeName) {
     return holdType.replace(casePattern, "$1 $2");
 }
 
-// Set some of the common defaults, in case the attributes are missing
-function getDefaultObject() {
-    var obj = {};
-    obj['turrets'] = 0;
-    obj['launchers'] = 0;
-    obj['highs'] = 0;
-    obj['mediums'] = 0;
-    obj['lows'] = 0;
-    return obj;
-}
-
 function getShip(db, shipID, override) {
-    var obj = getDefaultObject();
+    var obj = {};
     db['dgmTypeAttributes']({'typeID': shipID}).each(function (typeAttribute) {
         var attributeType = db['dgmAttributeTypes']({'attributeID': typeAttribute.attributeID}).first();
         var attributeValue = (typeAttribute.valueInt != null) ? typeAttribute.valueInt : typeAttribute.valueFloat;
@@ -597,7 +586,6 @@ function getShip(db, shipID, override) {
         obj['faction'] = 'Minmatar Republic';
     }
 
-    obj['tech'] = '';
     if (obj['_techLevel'] != null && parseInt(obj['_techLevel']) != 1) {
         obj['tech'] = obj['_techLevel'];
     }
@@ -635,10 +623,9 @@ function getShip(db, shipID, override) {
         var variationType = db['invTypes']({'typeID': variationID}).first();
         variations = variations + "{{Ship|" + variationType.typeName + "}}";
     }
-    if (variations.length == 0) {
-        variations = "<i>none</i>";
+    if (variations.length != 0) {
+        obj['variations'] = variations;
     }
-    obj['variations'] = variations;
     var parentTypeID = getParentType(db, shipID);
     if (parentTypeID != null) {
         var parentType = db['invTypes']({'typeID': parentTypeID}).first();
@@ -678,15 +665,7 @@ function getShip(db, shipID, override) {
         obj['extraholdtype'] = '';
     }
 
-    obj['roles'] = 'unspecified';
-    obj['ecmprio'] = '0';
-    obj['forumlinks'] = '';
-    obj['wikireferences'] = '';
     obj['externallinks'] = '[http://wiki.eveonline.com/en/wiki/' + escape(obj['shipname']) + ' ' + obj['shipname'] + ' on Eve Online Wiki]';
-    obj['highlights1'] = '';
-    obj['highlights2'] = '';
-    obj['highlights3'] = '';
-    obj['highlights4'] = '';
 
     //console.log(override);
     if (override != null) {
@@ -700,76 +679,27 @@ function getShip(db, shipID, override) {
 }
 
 function buildString(obj) {
-    str = '\
-<onlyinclude>{{{{#if:{{{mode|}}}|{{#switch:{{{mode}}}|box=ShipBoxLarge|#default=ShipBoxTooltip}}|ShipArticle}} <!--  Template marker : DON\'T EDIT LINE -->\n\
+    var sortedKeys = [];
+    for (var key in obj) {
+        sortedKeys.push(key);
+    }
+    sortedKeys.sort();
+    var str = '<onlyinclude>{{{{#if:{{{mode|}}}|{{#switch:{{{mode}}}|box=ShipBoxLarge|#default=ShipBoxTooltip}}|ShipArticle}} <!--  Template marker : DON\'T EDIT LINE -->\n\
  <!-----------------------------------------------------------\n\
  * SHIP ATTRIBUTES SECTION (last update : ' + new Date().toLocaleDateString() + ')\n\
  -------------------------------------------------------------\n\
  * on editing the attributes, please make sure that you don\'t\n\
  * leave/misstype any tags required. please follow the same\n\
  * format below and edit only the values (after the = sign).\n\
- ------------------------------------------------------------->\n\
- | shipid=' + obj['shipid'] + '\n\
- | shipimg=' + obj['shipimg'] + '\n\
- | shipname=' + obj['shipname'] + '\n\
- | caption=' + obj['caption'] + '\n\
- | class=' + obj['class'] + '\n\
- | grouping=' + obj['grouping'] + '\n\
- | hulltype=' + obj['hulltype'] + '\n\
- | faction=' + obj['faction'] + '\n\
- | race=' + obj['race'] + '\n\
- | roles=' + obj['roles'] + '\n\
- | variations=' + obj['variations'] + '\n\
- | tech=' + obj['tech'] + '\n\
- | ecmprio=' + obj['ecmprio'] + ' <!-- 0 = none, 1 = low, 2 = normal, 3 = high, 4 = highest -->\n\
- | powergrid=' + obj['powergrid'] + '\n\
- | cpu=' + obj['cpu'] + '\n\
- | capacitor=' + obj['capacitor'] + '\n\
- | highs=' + obj['highs'] + '\n\
- | turrets=' + obj['turrets'] + '\n\
- | launchers=' + obj['launchers'] + '\n\
- | mediums=' + obj['mediums'] + '\n\
- | lows=' + obj['lows'] + '\n\
- | mass=' + obj['mass'] + '\n\
- | volume=' + obj['volume'] + '\n\
- | cargohold=' + obj['cargohold'] + '\n\
- | extrahold=' + obj['extrahold'] + '\n\
- | extraholdtype=' + obj['extraholdtype'] + '\n\
- | dronebay=' + obj['dronebay'] + '\n\
- | bandwidth=' + obj['bandwidth'] + '\n\
- | info=' + obj['info'] + '\n\
- | bonuses=' + obj['bonuses'] + '\n\
- | structurehp=' + obj['structurehp'] + '\n\
- | shieldhp=' + obj['shieldhp'] + '\n\
- | shieldem=' + obj['shieldem'] + '\n\
- | shieldexp=' + obj['shieldexp'] + '\n\
- | shieldkin=' + obj['shieldkin'] + '\n\
- | shieldtherm=' + obj['shieldtherm'] + '\n\
- | armorhp=' + obj['armorhp'] + '\n\
- | armorem=' + obj['armorem'] + '\n\
- | armorexp=' + obj['armorexp'] + '\n\
- | armorkin=' + obj['armorkin'] + '\n\
- | armortherm=' + obj['armortherm'] + '\n\
- | maxvelocity=' + obj['maxvelocity'] + '\n\
- | inertia=' + obj['inertia'] + '\n\
- | warpspeed=' + obj['warpspeed'] + '\n\
- | warptime=' + obj['warptime'] + '\n\
- | targetrange=' + obj['targetrange'] + '\n\
- | sigradius=' + obj['sigradius'] + '\n\
- | maxlockedtargets=' + obj['maxlockedtargets'] + '\n\
- | sensortype=' + obj['sensortype'] + '\n\
- | sensorvalue=' + obj['sensorvalue'] + '\n\
- | scanres=' + obj['scanres'] + '\n\
- | reqskills=' + obj['reqskills'] + '\n\
- | totaltraintime=' + obj['totaltraintime'] + '\n\
- | forumlinks=' + obj['forumlinks'] + '\n\
- | wikireferences=' + obj['wikireferences'] + '\n\
- | externallinks=' + obj['externallinks'] + '\n\
- | highlights1=' + obj['highlights1'] + '\n\
- | highlights2=' + obj['highlights2'] + '\n\
- | highlights3=' + obj['highlights3'] + '\n\
- | highlights4=' + obj['highlights4'] + '\n\
-}}</onlyinclude> <!-- Template marker : DON\'T EDIT LINE -->';
+ ------------------------------------------------------------->\n';
+    for (var i = 0; i < sortedKeys.length; i++) {
+        var key = sortedKeys[i];
+        if (key.indexOf('_') == 0) {
+            continue;
+        }
+        str = str + ' | ' + key + '=' + obj[key] + '\n';
+    }
+    str = str + '}}</onlyinclude> <!-- Template marker : DON\'T EDIT LINE -->';
 
  return str;
 }
