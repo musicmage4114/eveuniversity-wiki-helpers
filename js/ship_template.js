@@ -94,7 +94,7 @@ function buildShipDescription(shipName) {
         $("#js-status-div").text("Ship not found");
     } else {
         var override = {};
-        var fields = ['roles', 'faction', 'ecmprio', 'grouping', 'forumlinks', 'wikireferences', 'externallinks', 'highlights1', 'highlights2', 'highlights3', 'highlights4'];
+        var fields = ['shipimg', 'roles', 'faction', 'ecmprio', 'grouping', 'forumlinks', 'wikireferences', 'externallinks', 'highlights1', 'highlights2', 'highlights3', 'highlights4'];
         for (var i = 0; i < fields.length; i++) {
             var fieldID = "#js-" + fields[i] + "-input";
             if ($(fieldID).val().length > 0) {
