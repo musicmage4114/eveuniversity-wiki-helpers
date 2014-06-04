@@ -660,13 +660,6 @@ function getShip(db, shipID, override) {
 
     obj['totaltraintime'] = getTrainingTime(requiredSkills);
 
-    if (obj['extrahold'] == null) {
-        obj['extrahold'] = '';
-    }
-    if (obj['extraholdtype'] == null) {
-        obj['extraholdtype'] = '';
-    }
-
     obj['externallinks'] = '[http://wiki.eveonline.com/en/wiki/' + escape(obj['shipname']) + ' ' + obj['shipname'] + ' on Eve Online Wiki]';
 
     //console.log(override);
