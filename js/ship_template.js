@@ -558,6 +558,13 @@ function getShip(db, shipID, override) {
             obj['extrahold'] = valStr + " " + unitName;
             obj['extraholdtype'] = getHoldType(attributeType.attributeName);
         }
+        case "fleetHangarCapacity":
+        {
+            if (obj['extrahold'] == null) { // only use this if we don't have a special version
+                obj['extrahold'] = valStr + " " + unitName;
+                obj['extraholdtype'] = "Fleet Hangar";
+            }
+        }
         }
     })
     obj['shipid'] = shipID;
