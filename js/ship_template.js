@@ -560,9 +560,16 @@ function getShip(db, shipID, override) {
         }
         case "fleetHangarCapacity":
         {
-            if (obj['extrahold'] == null) { // only use this if we don't have a special version
+            if (obj['extrahold'] == null || obj['extraholdtype'] == "Ship Maintenance") { // only use this if we don't have a special version
                 obj['extrahold'] = valStr + " " + unitName;
                 obj['extraholdtype'] = "Fleet Hangar";
+            }
+        }
+        case "shipMaintenanceBayCapacity":
+        {
+            if (obj['extrahold'] == null) { // only use this if we don't have a special version or a fleet version
+                obj['extrahold'] = valStr + " " + unitName;
+                obj['extraholdtype'] = "Ship Maintenance";
             }
         }
         }
