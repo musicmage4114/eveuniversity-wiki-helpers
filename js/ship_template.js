@@ -28,7 +28,13 @@ function DatabaseContext() {
     };
 
     this.updateDb = function(tableName, response) {
-        this.db[tableName] = TAFFY(response);
+	// When we create these tables, we just have the object array.
+	// The EVENumbers exports have a top level object with a RECORDS field
+	var data = response;
+	if (response.hasOwnProperty("RECORDS")) {
+	    data = response["RECORDS"];
+	}
+        this.db[tableName] = TAFFY(data);
         delete this.pendingTables[tableName];
         if (!this.hasPendingTables()) {
             this.callback(this.db);
