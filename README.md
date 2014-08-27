@@ -27,8 +27,13 @@ I then convert all the tables to json using the `create_json.py` script.
 python2.7 ./create_json.py
 ```
 
+I also generally copy the `.yaml` files into the sde folder.
 
-Since the tool doesn't need all of the json files, I only check in the ones that are referenced by the tool.
+```bash
+cp hyperion-1.0-101505/*.yaml sde
+```
+
+Since the tool doesn't need all of the json files, I only check in the ones that are referenced by the tool (which will show up with a git status of modified, rather than untracked).
 
 Git
 ---
