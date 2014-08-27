@@ -12,7 +12,7 @@ The typeIDs.yaml is based on the Rubicon 1.4 SDE.
 Updating the Data
 -----------------
 
-To update the json files, I wait for Steve Ronuken to update the mysql version (since I don't use MS SQL Server), and import the latest export of [mysql-latest] into my SQL database. These instructions assume that if you are doing this part, you have also created a database named `dbo` and an account with a username of `username` and a password of `password`. This example is based on the hyperion SDE.
+To update the json files, I wait for Steve Ronuken to update the mysql version (since I don't use MS SQL Server), and import the latest export of [mysql-latest][] into my SQL database. These instructions assume that if you are doing this part, you have also created a database named `dbo` and an account with a username of `username` and a password of `password`. This example is based on the hyperion SDE.
   
   curl -O https://www.fuzzwork.co.uk/dump/mysql-latest.tar.bz2
   tar zxvf mysql-latest.tar.bz2
