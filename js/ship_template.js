@@ -28,8 +28,8 @@ function DatabaseContext() {
     };
 
     this.updateDb = function(tableName, response) {
-	// When we create these tables, we just have the object array.
-	// The EVENumbers exports have a top level object with a RECORDS field
+        // When we create these tables, we just have the object array.
+        // The EVENumbers exports have a top level object with a RECORDS field
 	var data = response;
 	if (response.hasOwnProperty("RECORDS")) {
 	    data = response["RECORDS"];
@@ -45,7 +45,8 @@ function DatabaseContext() {
         var jsonCallback = function(dbContext, tableName) {
             return function(response, p2, p3) { dbContext.updateDb(tableName, response); }
         }(this, tableName);
-        $.getJSON("sde/" + tableName + ".json", null, jsonCallback);
+        // EVENumbers exports use lower case table names instead of camel case
+        $.getJSON("sde/" + tableName.toLowerCase() + ".json", null, jsonCallback);
     };
 
     this.yamlCallback = function(tableName, data) {
