@@ -60,7 +60,7 @@
 "marketGroupID":10,
 "parentGroupID":9,
 "marketGroupName":"Turrets & Bays",
-"description":"Everything you need to hurt your fellow man and then some.",
+"description":"Weapon systems to inflict damage on enemy targets",
 "iconID":365,
 "hasTypes":0
 },
@@ -76,7 +76,7 @@
 "marketGroupID":14,
 "parentGroupID":9,
 "marketGroupName":"Hull & Armor ",
-"description":"Everything you need to strengthen your ship against the dangers of space.",
+"description":"Modules that strengthen the physical frame of a spaceship against external dangers",
 "iconID":68,
 "hasTypes":0
 },
@@ -92,7 +92,7 @@
 "marketGroupID":20,
 "parentGroupID":19,
 "marketGroupName":"Industrial Goods",
-"description":"Various products used in a variety of industries.",
+"description":"Various products used in a variety of industries",
 "iconID":1192,
 "hasTypes":1
 },
@@ -100,7 +100,7 @@
 "marketGroupID":22,
 "parentGroupID":19,
 "marketGroupName":"Radioactive Goods",
-"description":"Chemicals and waste, dripping with radiation. Handle with caution.",
+"description":"Chemicals and waste, pulsing with radiation. Can be bought and sold for profit",
 "iconID":29,
 "hasTypes":1
 },
@@ -108,7 +108,7 @@
 "marketGroupID":23,
 "parentGroupID":19,
 "marketGroupName":"Passengers",
-"description":"Living, breathing cargo.",
+"description":"Ferrying passengers can give a nice profit",
 "iconID":2543,
 "hasTypes":1
 },
@@ -124,7 +124,7 @@
 "marketGroupID":27,
 "parentGroupID":24,
 "marketGroupName":"Implants",
-"description":"Microchips, hard-wired to the brainstem.",
+"description":"Implants improve a pilot's performance in various areas. They cannot be removed once inserted",
 "iconID":2062,
 "hasTypes":0
 },
@@ -132,7 +132,7 @@
 "marketGroupID":52,
 "parentGroupID":9,
 "marketGroupName":"Propulsion ",
-"description":"When the need for speed overwhelms, look no further.",
+"description":"Modules that affect the navigational properties of a spaceship",
 "iconID":72,
 "hasTypes":0
 },
@@ -308,7 +308,7 @@
 "marketGroupID":99,
 "parentGroupID":11,
 "marketGroupName":"Projectile Ammo",
-"description":"Metal-cased shells, fired by artillery guns and autocannons.",
+"description":"Metal-cased shells, fired by artillery guns and autocannons",
 "iconID":1004,
 "hasTypes":0
 },
@@ -316,7 +316,7 @@
 "marketGroupID":100,
 "parentGroupID":11,
 "marketGroupName":"Hybrid Charges",
-"description":"Combination shell \/ plasma core charges designed for railguns and blasters.",
+"description":"Charges with a plasma core designed for railguns and blasters",
 "iconID":1047,
 "hasTypes":0
 },
@@ -324,7 +324,7 @@
 "marketGroupID":101,
 "parentGroupID":11,
 "marketGroupName":"Frequency Crystals",
-"description":"Modulate energy weapon beams into several different frequencies.",
+"description":"Modulate energy into several different frequencies for beam lasers and pulse lasers ",
 "iconID":1131,
 "hasTypes":0
 },
@@ -404,7 +404,7 @@
 "marketGroupID":114,
 "parentGroupID":11,
 "marketGroupName":"Missiles",
-"description":"Jet-propelled projectiles with variable payloads.",
+"description":"Self-propelled projectiles with various payloads",
 "iconID":1334,
 "hasTypes":0
 },
@@ -444,7 +444,7 @@
 "marketGroupID":120,
 "parentGroupID":11,
 "marketGroupName":"Probes",
-"description":"Scan Probes scanning down things in space, survey probes for analysing moons and warp disrupt probes used by interdictors.",
+"description":"Deployed into space for scanning or disruption purposes",
 "iconID":1723,
 "hasTypes":0
 },
@@ -508,7 +508,7 @@
 "marketGroupID":139,
 "parentGroupID":11,
 "marketGroupName":"Cap Booster Charges",
-"description":"Fuel for the furnace.",
+"description":"Give an instant boost to a spaceship's capacitor",
 "iconID":1033,
 "hasTypes":1
 },
@@ -524,7 +524,7 @@
 "marketGroupID":141,
 "parentGroupID":9,
 "marketGroupName":"Smartbombs",
-"description":"Omnidirectional energy blasts.  The loner's best friend in hostile territory.",
+"description":"Omnidirectional energy blasts that damage everything in a radius. Good against drones",
 "iconID":112,
 "hasTypes":0
 },
@@ -556,7 +556,7 @@
 "marketGroupID":158,
 "parentGroupID":157,
 "marketGroupName":"Mining Drones",
-"description":"The miner's little helpers.",
+"description":"Drones capable of mining asteroids for raw materials",
 "iconID":1084,
 "hasTypes":1
 },
@@ -564,7 +564,7 @@
 "marketGroupID":159,
 "parentGroupID":157,
 "marketGroupName":"Combat Drones",
-"description":"Tiny warriors, not to be underestimated.",
+"description":"Drones with combat capabilities",
 "iconID":1084,
 "hasTypes":0
 },
@@ -572,7 +572,7 @@
 "marketGroupID":204,
 "parentGroupID":2,
 "marketGroupName":"Ships",
-"description":"Blueprints of capsule-fitted space ships.",
+"description":"Blueprints of capsuleer spaceships",
 "iconID":2703,
 "hasTypes":0
 },
@@ -612,7 +612,7 @@
 "marketGroupID":209,
 "parentGroupID":2,
 "marketGroupName":"Ship Equipment",
-"description":"Blueprints of modules and equipment for capsule-fitted vessels.",
+"description":"Blueprints of modules and equipment for capsuleer spaceships",
 "iconID":2703,
 "hasTypes":0
 },
@@ -628,7 +628,7 @@
 "marketGroupID":211,
 "parentGroupID":2,
 "marketGroupName":"Ammunition & Charges",
-"description":"Blueprints of ammunition and charges.",
+"description":"Blueprints of ammunition and charges",
 "iconID":2703,
 "hasTypes":0
 },
@@ -1084,7 +1084,7 @@
 "marketGroupID":357,
 "parentGroupID":2,
 "marketGroupName":"Drones",
-"description":"Blueprints of drone designs.",
+"description":"Blueprints of drone designs",
 "iconID":2703,
 "hasTypes":0
 },
@@ -1108,7 +1108,7 @@
 "marketGroupID":364,
 "parentGroupID":150,
 "marketGroupName":"Gunnery",
-"description":"The core of the combat arts: how to use your guns.",
+"description":"Skills pertaining to the efficient use of turret-based weapon systems",
 "iconID":33,
 "hasTypes":1
 },
@@ -1116,7 +1116,7 @@
 "marketGroupID":365,
 "parentGroupID":150,
 "marketGroupName":"Corporation Management",
-"description":"Running a well-oiled operation is a fine art.",
+"description":"Skills pertaining to management of large social groups",
 "iconID":33,
 "hasTypes":1
 },
@@ -1124,7 +1124,7 @@
 "marketGroupID":366,
 "parentGroupID":150,
 "marketGroupName":"Drones",
-"description":"Skills pertaining to the efficient operation of drones.",
+"description":"Skills pertaining to the efficient operation of drones",
 "iconID":33,
 "hasTypes":1
 },
@@ -1132,7 +1132,7 @@
 "marketGroupID":367,
 "parentGroupID":150,
 "marketGroupName":"Electronic Systems",
-"description":"Skills pertaining to management of a starfaring vessel's electronic systems.",
+"description":"Skills pertaining to management of a spaceship's electronic systems",
 "iconID":33,
 "hasTypes":1
 },
@@ -1140,7 +1140,7 @@
 "marketGroupID":368,
 "parentGroupID":150,
 "marketGroupName":"Engineering",
-"description":"Skills pertaining to management of a starfaring vessel's hardwired onboard systems.",
+"description":"Skills pertaining to management of a spaceship's hardware",
 "iconID":33,
 "hasTypes":1
 },
@@ -1148,7 +1148,7 @@
 "marketGroupID":369,
 "parentGroupID":150,
 "marketGroupName":"Production",
-"description":"Skills pertaining to the efficient use of manufacturing facilities and industrial devices.",
+"description":"Skills pertaining to the efficient use of manufacturing facilities and industrial devices",
 "iconID":33,
 "hasTypes":1
 },
@@ -1156,7 +1156,7 @@
 "marketGroupID":370,
 "parentGroupID":150,
 "marketGroupName":"Leadership",
-"description":"Skills pertaining to the efficient coordination of the pilots under your command.",
+"description":"Skills pertaining to the efficient coordination of capsuleers under your command",
 "iconID":33,
 "hasTypes":1
 },
@@ -1164,7 +1164,7 @@
 "marketGroupID":372,
 "parentGroupID":150,
 "marketGroupName":"Rigging",
-"description":"Skills pertaining to the fine tuning of a starfaring vessel's installed systems.",
+"description":"Skills pertaining to the fine tuning of a spaceship's installed systems",
 "iconID":33,
 "hasTypes":1
 },
@@ -1172,7 +1172,7 @@
 "marketGroupID":373,
 "parentGroupID":150,
 "marketGroupName":"Missiles",
-"description":"Skills pertaining to the efficient use of jet-propelled warheads.",
+"description":"Skills pertaining to the efficient use of self-propelled warheads",
 "iconID":33,
 "hasTypes":1
 },
@@ -1180,7 +1180,7 @@
 "marketGroupID":374,
 "parentGroupID":150,
 "marketGroupName":"Navigation",
-"description":"How to make your way through space as quickly and efficiently as possible.",
+"description":"Skills pertaining to navigating your spaceship as quickly and efficiently as possible",
 "iconID":33,
 "hasTypes":1
 },
@@ -1188,7 +1188,7 @@
 "marketGroupID":375,
 "parentGroupID":150,
 "marketGroupName":"Science",
-"description":"Skills pertaining to various fields of scientific knowledge.",
+"description":"Skills pertaining to various fields of scientific knowledge",
 "iconID":33,
 "hasTypes":1
 },
@@ -1196,7 +1196,7 @@
 "marketGroupID":376,
 "parentGroupID":150,
 "marketGroupName":"Social",
-"description":"Skills pertaining to efficient navigation through the social landscape.",
+"description":"Skills pertaining to efficient navigation through the social landscape",
 "iconID":33,
 "hasTypes":1
 },
@@ -1204,7 +1204,7 @@
 "marketGroupID":377,
 "parentGroupID":150,
 "marketGroupName":"Spaceship Command",
-"description":"Skills required for commanding all shapes and sizes of capsule-fitted vessel.",
+"description":"Skills required for commanding all shapes and sizes of spaceships",
 "iconID":33,
 "hasTypes":1
 },
@@ -1212,7 +1212,7 @@
 "marketGroupID":378,
 "parentGroupID":150,
 "marketGroupName":"Trade",
-"description":"The knowledge required to build a commercial empire.",
+"description":"Skills pertaining to managing commercial activities",
 "iconID":33,
 "hasTypes":1
 },
@@ -1276,7 +1276,7 @@
 "marketGroupID":391,
 "parentGroupID":4,
 "marketGroupName":"Shuttles",
-"description":"Fast and cheap vessels for easy transport.",
+"description":"Fast and cheap vessels for easy transport",
 "iconID":1443,
 "hasTypes":0
 },
@@ -1356,7 +1356,7 @@
 "marketGroupID":404,
 "parentGroupID":477,
 "marketGroupName":"Deployable Structures",
-"description":"Chuck it into space and leave it there. If you like.",
+"description":"Various structures that can be deployed on behalf of an individual or group of capsuleers",
 "iconID":16,
 "hasTypes":0
 },
@@ -1884,7 +1884,7 @@
 "marketGroupID":477,
 "parentGroupID":null,
 "marketGroupName":"Structures",
-"description":"Capsuleers have many options to choose from when they decide to set up a home in space, from personal deployables to the capsuleer-controlled outpost stations",
+"description":"Capsuleers have many options when they decide to set up a home in space, from personal deployables to capsuleer-controlled outpost stations",
 "iconID":2222,
 "hasTypes":0
 },
@@ -1972,7 +1972,7 @@
 "marketGroupID":491,
 "parentGroupID":19,
 "marketGroupName":"Narcotics",
-"description":"Substances that tinker with brain chemistry and induce altered states.",
+"description":"Illegal substances that alter brain chemistry, for good or ill. Transport with caution",
 "iconID":1194,
 "hasTypes":1
 },
@@ -1980,7 +1980,7 @@
 "marketGroupID":492,
 "parentGroupID":19,
 "marketGroupName":"Consumer Products",
-"description":"Grease the wheels of the capitalistic machine.",
+"description":"Products in high demand with the materialistic public. Can be bought and sold for profit",
 "iconID":1182,
 "hasTypes":1
 },
@@ -2220,7 +2220,7 @@
 "marketGroupID":533,
 "parentGroupID":475,
 "marketGroupName":"Materials",
-"description":"The building blocks of your life in space.",
+"description":"Various materials used in manufacturing",
 "iconID":1201,
 "hasTypes":0
 },
@@ -2308,7 +2308,7 @@
 "marketGroupID":554,
 "parentGroupID":9,
 "marketGroupName":"Shield",
-"description":"Strengthen your barriers.",
+"description":"Modules that strengthen the energy barrier surrounding space ships against external dangers",
 "iconID":69,
 "hasTypes":0
 },
@@ -2604,7 +2604,7 @@
 "marketGroupID":593,
 "parentGroupID":11,
 "marketGroupName":"Mining Crystals",
-"description":"Frequency crystals custom-cut for different ore types.",
+"description":"Frequency crystals custom-cut for different ore types",
 "iconID":2654,
 "hasTypes":1
 },
@@ -2772,7 +2772,7 @@
 "marketGroupID":614,
 "parentGroupID":19,
 "marketGroupName":"Criminal Evidence",
-"description":"Proof positive of a bounty hunter's job well done.",
+"description":"Proof positive of a bounty hunter's job well done",
 "iconID":2302,
 "hasTypes":0
 },
@@ -2788,7 +2788,7 @@
 "marketGroupID":616,
 "parentGroupID":19,
 "marketGroupName":"Insignias",
-"description":"DNA-imprinted personal insignias.",
+"description":"DNA-imprinted personal insignias, used by empire navies. Transport with caution",
 "iconID":2552,
 "hasTypes":0
 },
@@ -3004,7 +3004,7 @@
 "marketGroupID":655,
 "parentGroupID":9,
 "marketGroupName":"Engineering Equipment",
-"description":"Everything you need to upgrade your powercore.",
+"description":"Modules that affect a spaceship's capacitor and modify fitting capabilities",
 "iconID":70,
 "hasTypes":0
 },
@@ -3012,7 +3012,7 @@
 "marketGroupID":656,
 "parentGroupID":9,
 "marketGroupName":"Electronics and Sensor Upgrades",
-"description":"Give your onboard computer systems some love.",
+"description":"Modules that strengthen the sensory capabilities of a spaceship",
 "iconID":104,
 "hasTypes":0
 },
@@ -3020,7 +3020,7 @@
 "marketGroupID":657,
 "parentGroupID":9,
 "marketGroupName":"Electronic Warfare",
-"description":"Mounds of electronic wizardry, for that extra edge.",
+"description":"Modules that can disrupt capabilities of enemy targets and defend against same",
 "iconID":111,
 "hasTypes":0
 },
@@ -3452,7 +3452,7 @@
 "marketGroupID":716,
 "parentGroupID":677,
 "marketGroupName":"Ladar Jammers",
-"description":"Targeting jammers specialized for use against ladar sensors.",
+"description":"Targeting jammers specialized for use against Ladar sensors.",
 "iconID":3228,
 "hasTypes":1
 },
@@ -3532,7 +3532,7 @@
 "marketGroupID":726,
 "parentGroupID":685,
 "marketGroupName":"Ladar Sensors",
-"description":"Boost a ship's ladar sensor strength for a short duration.",
+"description":"Boost a ship's Ladar sensor strength for a short duration.",
 "iconID":104,
 "hasTypes":1
 },
@@ -3628,7 +3628,7 @@
 "marketGroupID":738,
 "parentGroupID":19,
 "marketGroupName":"Nexus Chips",
-"description":"For storage of artificial intelligence systems.",
+"description":"Stores artificial intelligence systems. Used when acquiring special ships from Loyalty Point stores",
 "iconID":2038,
 "hasTypes":1
 },
@@ -3636,7 +3636,7 @@
 "marketGroupID":739,
 "parentGroupID":19,
 "marketGroupName":"Criminal Dog Tags",
-"description":"Criminal organizations' identification tags.",
+"description":"Criminal organizations' identification tags. Can be traded to the empires",
 "iconID":2325,
 "hasTypes":0
 },
@@ -3756,7 +3756,7 @@
 "marketGroupID":754,
 "parentGroupID":19,
 "marketGroupName":"Political Paraphernalia",
-"description":"Political propaganda & those that engage in it.",
+"description":"Political propaganda and those that engage in it",
 "iconID":1204,
 "hasTypes":1
 },
@@ -3772,7 +3772,7 @@
 "marketGroupID":760,
 "parentGroupID":9,
 "marketGroupName":"Civilian Modules",
-"description":"Modules whose specifications are geared toward use on rookie ships.",
+"description":"Modules whose specifications are geared toward use on rookie ships",
 "iconID":2536,
 "hasTypes":1
 },
@@ -3924,7 +3924,7 @@
 "marketGroupID":779,
 "parentGroupID":9,
 "marketGroupName":"Fleet Assistance Modules",
-"description":"Modules used to assist fleet members.",
+"description":"Modules used to assist fleet members",
 "iconID":20969,
 "hasTypes":0
 },
@@ -4054,7 +4054,7 @@
 "marketGroupName":"Outpost Components",
 "description":"Blueprints of Outpost Construction Platforms.",
 "iconID":2703,
-"hasTypes":1
+"hasTypes":0
 },
 {
 "marketGroupID":799,
@@ -4332,7 +4332,7 @@
 "marketGroupID":841,
 "parentGroupID":157,
 "marketGroupName":"Electronic Warfare Drones",
-"description":"Electronic Warfare Drones",
+"description":"Drones that affect the tracking and sensor capabilities of ships",
 "iconID":1084,
 "hasTypes":1
 },
@@ -4340,7 +4340,7 @@
 "marketGroupID":842,
 "parentGroupID":157,
 "marketGroupName":"Logistic Drones",
-"description":"Logistic Drones",
+"description":"Drones that provide support to friendly ships",
 "iconID":1084,
 "hasTypes":1
 },
@@ -4348,7 +4348,7 @@
 "marketGroupID":843,
 "parentGroupID":157,
 "marketGroupName":"Combat Utility Drones",
-"description":"Combat Utility Drones",
+"description":"Drones that interfere with the performance of enemy ships",
 "iconID":1084,
 "hasTypes":1
 },
@@ -5004,7 +5004,7 @@
 "marketGroupID":938,
 "parentGroupID":9,
 "marketGroupName":"Drone Upgrades",
-"description":"Subsystems designed to increase drone efficiency.",
+"description":"Modules that increase drone efficiency",
 "iconID":2989,
 "hasTypes":1
 },
@@ -5020,7 +5020,7 @@
 "marketGroupID":940,
 "parentGroupID":19,
 "marketGroupName":"Starbase Charters",
-"description":"The required licences to operate starbases within the borders of the empires.",
+"description":"The required licenses to operate starbases within the borders of the empires",
 "iconID":1192,
 "hasTypes":1
 },
@@ -5028,7 +5028,7 @@
 "marketGroupID":943,
 "parentGroupID":2,
 "marketGroupName":"Ship Modifications",
-"description":"Daring captains can modify the performance of their ship by jury rigging it.",
+"description":"Blueprints of rigs used to modify ship performance",
 "iconID":2703,
 "hasTypes":0
 },
@@ -5252,7 +5252,7 @@
 "marketGroupID":977,
 "parentGroupID":24,
 "marketGroupName":"Booster",
-"description":"Synthetic compounds designed to push you beyond the edge of your capabilities... at a cost, of course. ",
+"description":"Illegal substances that give temporary effects, but with adverse side-effects as well",
 "iconID":3211,
 "hasTypes":1
 },
@@ -5500,7 +5500,7 @@
 "marketGroupID":1015,
 "parentGroupID":11,
 "marketGroupName":"Bombs",
-"description":"Large, area of effect weapons, used by stealth bombers.",
+"description":"Large, area of effect weapons, used by stealth bombers",
 "iconID":3281,
 "hasTypes":1
 },
@@ -5612,7 +5612,7 @@
 "marketGroupID":1035,
 "parentGroupID":475,
 "marketGroupName":"Components",
-"description":"Preconstructed components, ready to be used in all kinds of high end manufacturing.",
+"description":"Components are manufactured items used in various industry activities",
 "iconID":1436,
 "hasTypes":0
 },
@@ -5652,7 +5652,7 @@
 "marketGroupID":1041,
 "parentGroupID":2,
 "marketGroupName":"Manufacture & Research",
-"description":"Blueprints related to Manufacture and research processes",
+"description":"Blueprints of items used for manufacturing and research processes",
 "iconID":2703,
 "hasTypes":0
 },
@@ -6044,7 +6044,7 @@
 "marketGroupID":1094,
 "parentGroupID":11,
 "marketGroupName":"Scripts",
-"description":"Scripts for calibrating certain module functions. ",
+"description":"Scripts that allow for tuning the effects of certain modules",
 "iconID":3345,
 "hasTypes":1
 },
@@ -6060,7 +6060,7 @@
 "marketGroupID":1103,
 "parentGroupID":11,
 "marketGroupName":"Nanite Repair Paste",
-"description":"A nanite packed fluid, used for emergency repairs of ship modules.",
+"description":"A nanite packed-fluid, used for emergency repairs of ship modules",
 "iconID":3302,
 "hasTypes":1
 },
@@ -6076,7 +6076,7 @@
 "marketGroupID":1109,
 "parentGroupID":19,
 "marketGroupName":"Sleeper Components",
-"description":"Mysterious pieces of technology of Sleeper origin.",
+"description":"Mysterious pieces of technology of Sleeper origin, coveted by some empire corporations",
 "iconID":3755,
 "hasTypes":1
 },
@@ -6084,7 +6084,7 @@
 "marketGroupID":1110,
 "parentGroupID":150,
 "marketGroupName":"Scanning",
-"description":"Skills dedicated to identification and signature recognition procedures.",
+"description":"Skills pertaining to signature recognition and identification procedures",
 "iconID":33,
 "hasTypes":1
 },
@@ -6092,7 +6092,7 @@
 "marketGroupID":1111,
 "parentGroupID":955,
 "marketGroupName":"Rigs",
-"description":"Rigs can be used on any ship with rig slots and enough calibration points to fit them.",
+"description":"Rigs modify the performance of ships in which they're installed. Destroyed if removed from a ship",
 "iconID":3203,
 "hasTypes":0
 },
@@ -6100,7 +6100,7 @@
 "marketGroupID":1112,
 "parentGroupID":955,
 "marketGroupName":"Subsystems",
-"description":"Piecemeal components for modular ship designs.",
+"description":"Components used to piece together advanced modular spaceships",
 "iconID":3641,
 "hasTypes":0
 },
@@ -6852,7 +6852,7 @@
 "marketGroupID":1272,
 "parentGroupID":477,
 "marketGroupName":"Sovereignty Structures",
-"description":"Structures designed to facilitate territorial claim, defense, industry.",
+"description":"Structures pertaining to the control and exploitation of solar systems",
 "iconID":3952,
 "hasTypes":0
 },
@@ -6916,7 +6916,7 @@
 "marketGroupID":1285,
 "parentGroupID":477,
 "marketGroupName":"Starbase Structures",
-"description":"Components required to construct a functioning starbase.",
+"description":"Structures used in constructing capsuleer-run starbases",
 "iconID":2222,
 "hasTypes":0
 },
@@ -6972,7 +6972,7 @@
 "marketGroupID":1320,
 "parentGroupID":null,
 "marketGroupName":"Planetary Infrastructure",
-"description":"Capsuleers are able exploit the abundant planetary resources of New Eden by establishing command centers on the ground and orbital infrastructure in space",
+"description":"Capsuleers can exploit the planetary resources of New Eden by establishing command centers on the ground and orbital infrastructure in space",
 "iconID":2881,
 "hasTypes":0
 },
@@ -6980,7 +6980,7 @@
 "marketGroupID":1322,
 "parentGroupID":1320,
 "marketGroupName":"Command Centers",
-"description":"The core structure of any planetary command.",
+"description":"A Command Center is required to extract resources from a planet",
 "iconID":2875,
 "hasTypes":1
 },
@@ -6988,7 +6988,7 @@
 "marketGroupID":1323,
 "parentGroupID":150,
 "marketGroupName":"Resource Processing",
-"description":"Skills required to extract raw materials and refine them.",
+"description":"Skills pertaining to efficiently extracting raw materials and refining them",
 "iconID":33,
 "hasTypes":1
 },
@@ -7044,7 +7044,7 @@
 "marketGroupID":1338,
 "parentGroupID":2,
 "marketGroupName":"Structures",
-"description":"Blueprints of Starbase structures, Sovereignty structures and Deployable structures.",
+"description":"Blueprints of structures in space",
 "iconID":2703,
 "hasTypes":0
 },
@@ -7163,8 +7163,8 @@
 {
 "marketGroupID":1353,
 "parentGroupID":1841,
-"marketGroupName":"Refining Arrays",
-"description":"Blueprints of Refining Arrays.",
+"marketGroupName":"Reprocessing Arrays",
+"description":"Blueprints of Reprocessing Arrays.",
 "iconID":2703,
 "hasTypes":1
 },
@@ -7212,7 +7212,7 @@
 "marketGroupID":1361,
 "parentGroupID":4,
 "marketGroupName":"Frigates",
-"description":"The smallest and fastest of all starships.",
+"description":"Small spaceships that excel in any role involving speed and agility",
 "iconID":1443,
 "hasTypes":0
 },
@@ -7252,7 +7252,7 @@
 "marketGroupID":1367,
 "parentGroupID":4,
 "marketGroupName":"Cruisers",
-"description":"Medium-sized starships intended for a variety of roles.",
+"description":"Medium-sized spaceships intended for a variety of roles",
 "iconID":1443,
 "hasTypes":0
 },
@@ -7292,7 +7292,7 @@
 "marketGroupID":1372,
 "parentGroupID":4,
 "marketGroupName":"Destroyers",
-"description":"These heavily armed gunboats are intended to counter frigate tactics.",
+"description":"Heavily armed spaceships that sacrifice durability for extra firepower",
 "iconID":1443,
 "hasTypes":0
 },
@@ -7308,7 +7308,7 @@
 "marketGroupID":1374,
 "parentGroupID":4,
 "marketGroupName":"Battlecruisers",
-"description":"Halfway between cruisers and battleships, these potent vessels are not to be underestimated.",
+"description":"Medium-sized spaceships that are more powerful than normal cruisers",
 "iconID":1443,
 "hasTypes":0
 },
@@ -7324,7 +7324,7 @@
 "marketGroupID":1376,
 "parentGroupID":4,
 "marketGroupName":"Battleships",
-"description":"These massive engines of war could not have a more appropriate name.",
+"description":"Large-sized spaceships with enough offensive and defensive capabilities to tackle all but the biggest problems",
 "iconID":1443,
 "hasTypes":0
 },
@@ -7364,7 +7364,7 @@
 "marketGroupID":1381,
 "parentGroupID":4,
 "marketGroupName":"Capital Ships",
-"description":"Capital ships are the undisputed lords of modern naval warfare.",
+"description":"Huge spaceships capable of dominating battlefields or industry sectors",
 "iconID":1443,
 "hasTypes":0
 },
@@ -7372,7 +7372,7 @@
 "marketGroupID":1382,
 "parentGroupID":4,
 "marketGroupName":"Industrial Ships",
-"description":"Without industrial ships and their massive cargo bays, all interstellar trade would grind to a halt.",
+"description":"Large transport ships that form the backbone of the economy",
 "iconID":1443,
 "hasTypes":0
 },
@@ -7380,7 +7380,7 @@
 "marketGroupID":1384,
 "parentGroupID":4,
 "marketGroupName":"Mining Barges",
-"description":"Reducing New Eden's natural beauty to empty husks one asteroid at a time.",
+"description":"Ships specially designed to harvest resources in space",
 "iconID":1443,
 "hasTypes":0
 },
@@ -7428,7 +7428,7 @@
 "marketGroupID":1397,
 "parentGroupID":1396,
 "marketGroupName":"Men's Clothing",
-"description":"Clothing for a masculine physique. ",
+"description":"Clothing for a masculine physique",
 "iconID":10829,
 "hasTypes":0
 },
@@ -7468,7 +7468,7 @@
 "marketGroupID":1402,
 "parentGroupID":1396,
 "marketGroupName":"Women's Clothing",
-"description":"Clothing for a feminine physique. ",
+"description":"Clothing for a feminine physique",
 "iconID":10830,
 "hasTypes":0
 },
@@ -7508,7 +7508,7 @@
 "marketGroupID":1407,
 "parentGroupID":1396,
 "marketGroupName":"Accessories",
-"description":"Apparel items that supplement an outfit by adding style and class. Some accessories can have functionality. ",
+"description":"Apparel items that supplement an outfit by adding style and class",
 "iconID":10828,
 "hasTypes":0
 },
@@ -7524,7 +7524,7 @@
 "marketGroupID":1410,
 "parentGroupID":1320,
 "marketGroupName":"Orbital Infrastructure",
-"description":"Space structures that are deployed around planets in order to tighten a corporations control of that planet.",
+"description":"Gives capsuleers stronger control over a planet's resources",
 "iconID":2875,
 "hasTypes":1
 },
@@ -7548,7 +7548,7 @@
 "marketGroupID":1427,
 "parentGroupID":19,
 "marketGroupName":"Aurum Tokens",
-"description":"An Aurum Token is a physical chit that can be redeemed for a predefined amount of AUR currency.",
+"description":"An Aurum Token is a physical chit that can be redeemed for a predefined amount of AUR currency",
 "iconID":10831,
 "hasTypes":1
 },
@@ -8556,7 +8556,7 @@
 "marketGroupID":1612,
 "parentGroupID":4,
 "marketGroupName":"Special Edition Ships",
-"description":"Rare and visually distinct ships of interest to collectors.",
+"description":"Rare and visually distinct ships of interest to collectors",
 "iconID":1443,
 "hasTypes":0
 },
@@ -8788,7 +8788,7 @@
 "marketGroupID":1646,
 "parentGroupID":157,
 "marketGroupName":"Salvage Drones",
-"description":"Helping you turn trash into treasure.",
+"description":"Drones capable of salvaging wrecks for valuables",
 "iconID":1084,
 "hasTypes":1
 },
@@ -9164,7 +9164,7 @@
 "marketGroupID":1700,
 "parentGroupID":19,
 "marketGroupName":"Security Tags",
-"description":"Security Tags",
+"description":"These tags can be turned in, in low-security space, for a boost to security rating",
 "iconID":2040,
 "hasTypes":1
 },
@@ -9212,7 +9212,7 @@
 "marketGroupID":1708,
 "parentGroupID":9,
 "marketGroupName":"Scanning Equipment",
-"description":"Equipment for scanning",
+"description":"Modules that give or improve scanning capabilities of spaceships",
 "iconID":107,
 "hasTypes":0
 },
@@ -9252,7 +9252,7 @@
 "marketGroupID":1713,
 "parentGroupID":9,
 "marketGroupName":"Harvest Equipment",
-"description":"Harvesting Equipment",
+"description":"Modules that give or improve harvesting capabilities of spaceships",
 "iconID":1061,
 "hasTypes":0
 },
@@ -9452,7 +9452,7 @@
 "marketGroupID":1745,
 "parentGroupID":150,
 "marketGroupName":"Armor",
-"description":"How to negate and repair damage on spaceship outer plating.",
+"description":"Skills pertaining to efficiently protecting the structural integrity of spaceships",
 "iconID":33,
 "hasTypes":1
 },
@@ -9460,7 +9460,7 @@
 "marketGroupID":1746,
 "parentGroupID":150,
 "marketGroupName":"Neural Enhancement",
-"description":"How to handle boosters, clone operation and implants.",
+"description":"Skills pertaining to managing boosters, implants and clone operations",
 "iconID":33,
 "hasTypes":1
 },
@@ -9468,7 +9468,7 @@
 "marketGroupID":1747,
 "parentGroupID":150,
 "marketGroupName":"Shields",
-"description":"How to absorb and deflect damage on a spaceship energy defense systems.",
+"description":"Skills pertaining to management of a spaceship's energy barriers",
 "iconID":33,
 "hasTypes":1
 },
@@ -9476,7 +9476,7 @@
 "marketGroupID":1748,
 "parentGroupID":150,
 "marketGroupName":"Targeting",
-"description":"Skills pertaining to management of a starfaring vessel's sensor systems.",
+"description":"Skills pertaining to management of a spaceship's sensor and tracking systems",
 "iconID":33,
 "hasTypes":1
 },
@@ -9908,7 +9908,7 @@
 "marketGroupID":1815,
 "parentGroupID":4,
 "marketGroupName":"Rookie Ships",
-"description":"Small entry level and expendable ships.",
+"description":"Small entry-level and expendable ships",
 "iconID":1443,
 "hasTypes":0
 },
@@ -9956,7 +9956,7 @@
 "marketGroupID":1823,
 "parentGroupID":150,
 "marketGroupName":"Planet Management",
-"description":"Skills related to the control and remote operation of planetary colonies.",
+"description":"Skills required for the control and remote operation of planetary colonies",
 "iconID":33,
 "hasTypes":1
 },
@@ -9964,7 +9964,7 @@
 "marketGroupID":1824,
 "parentGroupID":150,
 "marketGroupName":"Subsystems",
-"description":"Skills to control ship subsystems.",
+"description":"Skills pertaining to the use and control of ship subsystems",
 "iconID":33,
 "hasTypes":1
 },
@@ -10068,7 +10068,7 @@
 "marketGroupID":1840,
 "parentGroupID":19,
 "marketGroupName":"Covert Research Tools",
-"description":null,
+"description":"These covert operation items are in demand by various factions",
 "iconID":2039,
 "hasTypes":1
 },
@@ -10116,7 +10116,7 @@
 "marketGroupID":1846,
 "parentGroupID":19,
 "marketGroupName":"Bounty Reimbursement Tags",
-"description":"Tags to turn in for ISK",
+"description":"These tags can be turned in, at empire navy stations, in return for ISK",
 "iconID":21096,
 "hasTypes":1
 },
@@ -10140,7 +10140,7 @@
 "marketGroupID":1850,
 "parentGroupID":1849,
 "marketGroupName":"Simple Reactions",
-"description":"Chemical processes through which raw materials are made into compounds.",
+"description":"Chemical processes through which raw materials are made into compounds",
 "iconID":2665,
 "hasTypes":1
 },
@@ -10148,7 +10148,7 @@
 "marketGroupID":1851,
 "parentGroupID":1849,
 "marketGroupName":"Complex Reactions",
-"description":"Chemical processes through which compounds are combined into complex materials.",
+"description":"Chemical processes through which compounds are combined into complex materials",
 "iconID":2665,
 "hasTypes":1
 },
@@ -10156,7 +10156,7 @@
 "marketGroupID":1852,
 "parentGroupID":1849,
 "marketGroupName":"Simple Biochemical Reactions",
-"description":"Biochemical processes through which raw materials are made into compounds.",
+"description":"Biochemical processes through which raw materials are made into compounds",
 "iconID":2665,
 "hasTypes":1
 },
@@ -10164,7 +10164,7 @@
 "marketGroupID":1853,
 "parentGroupID":1849,
 "marketGroupName":"Complex Biochemical Reactions",
-"description":"Biochemical processes through which compounds are combined into complex materials.",
+"description":"Biochemical processes through which compounds are combined into complex materials",
 "iconID":2665,
 "hasTypes":1
 },
@@ -10172,7 +10172,7 @@
 "marketGroupID":1854,
 "parentGroupID":1849,
 "marketGroupName":"Polymer Reactions",
-"description":"Reactions involving polymers.",
+"description":"Chemical processes through which raw materials are made into hybrid polymers",
 "iconID":2665,
 "hasTypes":1
 },
@@ -10308,7 +10308,7 @@
 "marketGroupID":1872,
 "parentGroupID":475,
 "marketGroupName":"Research Equipment",
-"description":"The path of enlightenment. ",
+"description":"Various items used in research and invention",
 "iconID":2225,
 "hasTypes":0
 },
@@ -10556,7 +10556,7 @@
 "marketGroupID":1923,
 "parentGroupID":1922,
 "marketGroupName":"Pilot's License Extensions (PLEX)",
-"description":"Special ISK-priced capsuleering licenses offered as an alternative to regular piloting contracts.",
+"description":"Special ISK-priced capsuleering licenses offered as an alternative to regular piloting contracts",
 "iconID":3001,
 "hasTypes":1
 },
@@ -10621,7 +10621,7 @@
 "parentGroupID":132,
 "marketGroupName":"Warp Accelerators",
 "description":null,
-"iconID":null,
+"iconID":98,
 "hasTypes":1
 },
 {
@@ -10629,7 +10629,7 @@
 "parentGroupID":1612,
 "marketGroupName":"Special Edition Interceptors",
 "description":null,
-"iconID":null,
+"iconID":1443,
 "hasTypes":1
 },
 {
@@ -10685,14 +10685,14 @@
 "parentGroupID":132,
 "marketGroupName":"Jump Economizers",
 "description":null,
-"iconID":null,
+"iconID":98,
 "hasTypes":1
 },
 {
 "marketGroupID":1942,
 "parentGroupID":1922,
 "marketGroupName":"Pilot's Services",
-"description":null,
+"description":"Services available for various customization for capsuleers",
 "iconID":21335,
 "hasTypes":1
 },
@@ -10710,6 +10710,14 @@
 "marketGroupName":"Bottoms, extras",
 "description":null,
 "iconID":21275,
+"hasTypes":1
+},
+{
+"marketGroupID":1945,
+"parentGroupID":1841,
+"marketGroupName":"Compression Array",
+"description":"Blueprint of the Compression Array.",
+"iconID":2703,
 "hasTypes":1
 },
 {
@@ -10732,7 +10740,7 @@
 "marketGroupID":353561,
 "parentGroupID":350001,
 "marketGroupName":"Augmentations",
-"description":"Augmentations designed to increase cognitive ability allowing temporary usage of certain skills or increased skill point accrual.",
+"description":"Augmentations designed to increase cognitive ability allowing temporary usage of certain skills or increased skill point accrual",
 "iconID":null,
 "hasTypes":0
 },
@@ -10740,7 +10748,7 @@
 "marketGroupID":353562,
 "parentGroupID":350001,
 "marketGroupName":"Dropsuits",
-"description":"Infantry dropsuits designed to protect and sustain the wearer in even the harshest environments. Different dropsuit classifications offer specific bonuses to speed, mobility, defense and configurability.",
+"description":"Infantry dropsuits designed to protect and sustain the wearer in even the harshest environments",
 "iconID":null,
 "hasTypes":0
 },
@@ -10748,7 +10756,7 @@
 "marketGroupID":353563,
 "parentGroupID":350001,
 "marketGroupName":"Equipment",
-"description":"Deployable and handheld equipment used by infantry.",
+"description":"Deployable and handheld equipment used by infantry",
 "iconID":null,
 "hasTypes":0
 },
@@ -10756,7 +10764,7 @@
 "marketGroupID":353565,
 "parentGroupID":350001,
 "marketGroupName":"Turrets",
-"description":"Turrets are interchangeable weapons fitted to vehicle hardpoints. Turrets are available in large and small sizes.",
+"description":"Interchangeable weapons fitted to vehicle hardpoints",
 "iconID":null,
 "hasTypes":0
 },
@@ -10764,7 +10772,7 @@
 "marketGroupID":353566,
 "parentGroupID":350001,
 "marketGroupName":"Vehicles",
-"description":"Ground and aerial vehicles for increased firepower and improved combat effectiveness; the backbone of any planetary conquest.",
+"description":"Ground and aerial vehicles for increased firepower and improved combat effectiveness",
 "iconID":null,
 "hasTypes":0
 },
@@ -10772,7 +10780,7 @@
 "marketGroupID":353567,
 "parentGroupID":350001,
 "marketGroupName":"Weapons",
-"description":"Handheld weaponry used by infantry.",
+"description":"Handheld weaponry used by infantry",
 "iconID":null,
 "hasTypes":0
 },
@@ -11020,7 +11028,7 @@
 "marketGroupID":353633,
 "parentGroupID":350001,
 "marketGroupName":"Skills",
-"description":"Hardwired neural augmentations used to train new abilities.",
+"description":"Hardwired neural augmentations used to train new abilities",
 "iconID":null,
 "hasTypes":0
 },
@@ -11956,7 +11964,7 @@
 "marketGroupID":355449,
 "parentGroupID":350001,
 "marketGroupName":"Militia Gear",
-"description":"Standard-issue gear that requires no skills to use but is less efficient than other gear.",
+"description":"Standard-issue gear that requires no skills to use but is less efficient than other gear",
 "iconID":null,
 "hasTypes":0
 },
@@ -12828,7 +12836,7 @@
 "marketGroupID":364911,
 "parentGroupID":350001,
 "marketGroupName":"Packaged Fits",
-"description":"Pre-packaged, ready to deploy dropsuit and vehicle fittings: The answer to any battlefield problem you may encounter.",
+"description":"Pre-packaged, ready to deploy dropsuit and vehicle fittings",
 "iconID":null,
 "hasTypes":0
 },
@@ -13164,7 +13172,7 @@
 "marketGroupID":365995,
 "parentGroupID":350001,
 "marketGroupName":"Loyalty Store",
-"description":"An area of the market reserved for items that require loyalty points earned in Factional Contracts.",
+"description":"An area of the market reserved for items that require loyalty points earned in Factional Contracts",
 "iconID":null,
 "hasTypes":0
 },
@@ -13852,7 +13860,7 @@
 "marketGroupID":366335,
 "parentGroupID":350001,
 "marketGroupName":"Modules",
-"description":"Modules are interchangeable hardware components that enhance or otherwise alter the functionality of the vehicle or dropsuit they are fitted to.",
+"description":"Modules are interchangeable hardware components that enhance or otherwise alter the functionality of the vehicle or dropsuit they are fitted to",
 "iconID":null,
 "hasTypes":0
 },

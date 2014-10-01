@@ -11930,6 +11930,7 @@
         - 117
         - 94
     radius: 149.0
+    sofDnaAddition: mesh?quafeultra_red;quafeultra_reddark
     soundID: 20074
     traits:
         3340:
@@ -12014,6 +12015,7 @@
         - 117
         - 94
     radius: 149.0
+    sofDnaAddition: mesh?quafeultra_blue;quafeultra_bluedark
     soundID: 20074
     traits:
         3340:
@@ -15771,9 +15773,9 @@
                     and <a href=showinfo:12200>Large Warp Disruptor</a>
         3330:
             1:
-                bonus: 10
-                bonusText: bonus to kinetic <a href=showinfo:3321>Light Missile</a>
-                    and <a href=showinfo:3320>Rocket</a> damage
+                bonus: 5
+                bonusText: bonus to <a href=showinfo:3321>Light Missile</a> and <a
+                    href=showinfo:3320>Rocket</a> explosion radius
                 unitID: 105
             2:
                 bonus: 10
@@ -16102,8 +16104,8 @@
         3331:
             1:
                 bonus: 5
-                bonusText: bonus to <a href=showinfo:3321>Light Missile</a> and <a
-                    href=showinfo:3320>Rocket</a> Launcher rate of fire
+                bonusText: bonus to <a href=showinfo:3320>Rocket</a> Launcher rate
+                    of fire
                 unitID: 105
             2:
                 bonus: 4
@@ -16723,7 +16725,7 @@
                     optimal range
                 unitID: 105
             2:
-                bonus: 7.5
+                bonus: 10
                 bonusText: bonus to <a href=showinfo:3301>Small Hybrid Turret</a>
                     tracking speed
                 unitID: 105
@@ -43287,8 +43289,8 @@
                 unitID: 105
             2:
                 bonus: 5
-                bonusText: bonus to <a href=showinfo:3321>Light Missile</a> and <a
-                    href=showinfo:3320>Rocket</a> damage
+                bonusText: bonus to <a href=showinfo:3321>Light Missile</a> launcher
+                    and <a href=showinfo:3320>Rocket</a> launcher rate of fire
                 unitID: 105
 22453:
     graphicID: 1748
@@ -43422,7 +43424,7 @@
             1:
                 bonus: 5
                 bonusText: bonus to <a href=showinfo:3301>Small Hybrid Turret</a>
-                    damage
+                    rate of fire
                 unitID: 105
             2:
                 bonus: 10
@@ -47382,7 +47384,7 @@
                 bonus: 50
                 bonusText: bonus to <a href=showinfo:24572>Capital Remote Capacitor
                     Transmitter</a> and <a href=showinfo:24568>Capital Remote Armor
-                    Repairer range</a>
+                    Repairer</a> range
                 unitID: 105
             2:
                 bonus: 4
@@ -48253,7 +48255,7 @@
                 bonus: 50
                 bonusText: bonus to <a href=showinfo:24572>Capital Remote Capacitor
                     Transmitter</a> and <a href=showinfo:24568>Capital Remote Armor
-                    Repairer range</a>
+                    Repairer</a> range
                 unitID: 105
             2:
                 bonus: 4
@@ -69622,6 +69624,7 @@
         - 117
         - 94
     radius: 149.0
+    sofDnaAddition: mesh?quafeultra_white;quafeultra_whitedark
     soundID: 20074
     traits:
         3340:
@@ -76929,6 +76932,62 @@
 34112:
     graphicID: 1211
     radius: 1.0
+34118:
+    factionID: 500004
+    graphicID: 20928
+    masteries:
+        0:
+        - 96
+        - 99
+        - 69
+        - 138
+        - 140
+        - 150
+        - 89
+        - 165
+        1:
+        - 96
+        - 99
+        - 69
+        - 138
+        - 140
+        - 150
+        - 89
+        - 165
+        2:
+        - 96
+        - 99
+        - 69
+        - 138
+        - 140
+        - 150
+        - 89
+        - 165
+        3:
+        - 96
+        - 99
+        - 69
+        - 138
+        - 140
+        - 150
+        - 89
+        - 165
+        4:
+        - 96
+        - 99
+        - 69
+        - 138
+        - 140
+        - 117
+        - 150
+        - 89
+        - 165
+    radius: 250.0
+    soundID: 20072
+34119:
+    graphicID: 64
+34121:
+    iconID: 0
 34122:
     iconID: 98
     radius: 50.0
@@ -76989,3 +77048,145 @@
     graphicID: 1237
     radius: 59.0
     soundID: 20118
+34151:
+    factionID: 500010
+    graphicID: 20927
+    masteries:
+        0:
+        - 96
+        - 99
+        - 133
+        - 138
+        - 77
+        - 85
+        - 150
+        1:
+        - 96
+        - 99
+        - 133
+        - 138
+        - 77
+        - 85
+        - 150
+        2:
+        - 96
+        - 99
+        - 133
+        - 138
+        - 77
+        - 85
+        - 150
+        3:
+        - 96
+        - 99
+        - 133
+        - 138
+        - 77
+        - 85
+        - 150
+        4:
+        - 96
+        - 99
+        - 133
+        - 138
+        - 139
+        - 77
+        - 85
+        - 118
+        - 150
+    radius: 250.0
+    soundID: 20104
+34153:
+    graphicID: 43
+34154:
+    factionID: 500002
+    graphicID: 306
+    radius: 31.0
+    soundID: 20078
+34155:
+    factionID: 500002
+    graphicID: 1950
+    radius: 31.0
+    soundID: 20078
+34156:
+    iconID: 21347
+34157:
+    iconID: 21348
+34158:
+    iconID: 21349
+34159:
+    iconID: 21350
+34160:
+    iconID: 21351
+34161:
+    iconID: 21352
+34162:
+    iconID: 21353
+34163:
+    iconID: 21354
+34164:
+    iconID: 21355
+34165:
+    iconID: 21356
+34166:
+    iconID: 21357
+34167:
+    iconID: 21358
+34168:
+    iconID: 21359
+34169:
+    iconID: 21360
+34170:
+    iconID: 21361
+34171:
+    iconID: 21362
+34172:
+    iconID: 21373
+34173:
+    iconID: 21363
+34174:
+    iconID: 21364
+34175:
+    iconID: 21365
+34176:
+    iconID: 21366
+34177:
+    iconID: 21367
+34178:
+    iconID: 21368
+34179:
+    iconID: 21369
+34180:
+    iconID: 21370
+34181:
+    iconID: 21371
+34182:
+    factionID: 500001
+    graphicID: 38
+    radius: 27.0
+    soundID: 20070
+34183:
+    factionID: 500001
+    graphicID: 1882
+    radius: 39.0
+    soundID: 20070
+34184:
+    factionID: 500003
+    graphicID: 55
+    radius: 20.5
+    soundID: 20063
+34185:
+    factionID: 500003
+    graphicID: 1860
+    radius: 40.0
+    soundID: 20063
+34186:
+    factionID: 500004
+    graphicID: 59
+    radius: 35.0
+    soundID: 20074
+34187:
+    factionID: 500004
+    graphicID: 1771
+    radius: 39.0
+    soundID: 20074

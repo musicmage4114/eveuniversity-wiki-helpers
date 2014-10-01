@@ -375,7 +375,7 @@
 "unitID":1,
 "stackable":0,
 "highIsGood":1,
-"categoryID":6
+"categoryID":29
 },
 {
 "attributeID":55,
@@ -2113,7 +2113,7 @@
 "iconID":2030,
 "defaultValue":0,
 "published":1,
-"displayName":"LADAR Sensor Strength",
+"displayName":"Ladar Sensor Strength",
 "unitID":120,
 "stackable":0,
 "highIsGood":1,
@@ -2451,7 +2451,7 @@
 "iconID":3228,
 "defaultValue":0,
 "published":1,
-"displayName":"LADAR Strength",
+"displayName":"Ladar Strength",
 "unitID":null,
 "stackable":0,
 "highIsGood":1,
@@ -17006,8 +17006,8 @@
 },
 {
 "attributeID":1451,
-"attributeName":"npcAssistanceProirity",
-"description":"This tis the priority for assisting this npc, higher the number the mor priority this npc has to be repaired and boosted.",
+"attributeName":"npcAssistancePriority",
+"description":"This sets the priority for assisting this npc with remote-reps. NPCs with a higher value will be assisted before NPCs with a lower priority.",
 "iconID":null,
 "defaultValue":0,
 "published":0,
@@ -17059,7 +17059,7 @@
 {
 "attributeID":1456,
 "attributeName":"npcRemoteArmorRepairThreshold",
-"description":"the amount of damage tot he total armor HPO that has been done before they begin remote repairing that target.",
+"description":"How damaged does a teammate's armor need to be before it will be repaired.\r\n0.1 means: Must be below 90% armor to get repairs\r\n0.9 means: Must be below 10% armor to get repairs",
 "iconID":null,
 "defaultValue":0.25,
 "published":0,
@@ -17124,7 +17124,7 @@
 {
 "attributeID":1462,
 "attributeName":"npcRemoteShieldBoostThreshold",
-"description":"How damaged does a teammates shield need to be before it'll be repaired",
+"description":"How damaged does a teammates shield need to be before it'll be repaired.\r\n0.1 means: Must be below 90% shields to get repairs\r\n0.9 means: Must be below 10% shields to get repairs",
 "iconID":null,
 "defaultValue":0.75,
 "published":0,
@@ -17626,7 +17626,7 @@
 "unitID":null,
 "stackable":1,
 "highIsGood":1,
-"categoryID":3
+"categoryID":20
 },
 {
 "attributeID":1502,
@@ -18415,7 +18415,7 @@
 "iconID":null,
 "defaultValue":0,
 "published":1,
-"displayName":"LADAR strength bonus",
+"displayName":"Ladar strength bonus",
 "unitID":null,
 "stackable":1,
 "highIsGood":1,
