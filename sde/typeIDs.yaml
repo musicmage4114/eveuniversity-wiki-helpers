@@ -673,7 +673,7 @@
 523:
     iconID: 80
 524:
-    iconID: 80
+    iconID: 21378
 526:
     iconID: 1284
     radius: 500.0
@@ -3891,6 +3891,11 @@
     radius: 196.0
     soundID: 20070
     traits:
+        -1:
+            1:
+                bonus: 90
+                bonusText: reduction to effective distance traveled for jump fatigue
+                unitID: 105
         3342:
             1:
                 bonus: 5
@@ -3932,6 +3937,11 @@
     radius: 279.0
     soundID: 20070
     traits:
+        -1:
+            1:
+                bonus: 90
+                bonusText: reduction to effective distance traveled for jump fatigue
+                unitID: 105
         3342:
             1:
                 bonus: 5
@@ -3973,6 +3983,11 @@
     radius: 94.790000000000006
     soundID: 20074
     traits:
+        -1:
+            1:
+                bonus: 90
+                bonusText: reduction to effective distance traveled for jump fatigue
+                unitID: 105
         3340:
             1:
                 bonus: 5
@@ -4014,6 +4029,11 @@
     radius: 211.0
     soundID: 20078
     traits:
+        -1:
+            1:
+                bonus: 90
+                bonusText: reduction to effective distance traveled for jump fatigue
+                unitID: 105
         3341:
             1:
                 bonus: 10
@@ -4055,6 +4075,11 @@
     radius: 617.0
     soundID: 20078
     traits:
+        -1:
+            1:
+                bonus: 90
+                bonusText: reduction to effective distance traveled for jump fatigue
+                unitID: 105
         3341:
             1:
                 bonus: 5
@@ -4096,6 +4121,11 @@
     radius: 205.0
     soundID: 20078
     traits:
+        -1:
+            1:
+                bonus: 90
+                bonusText: reduction to effective distance traveled for jump fatigue
+                unitID: 105
         3341:
             1:
                 bonus: 5
@@ -4137,6 +4167,11 @@
     radius: 256.0
     soundID: 20074
     traits:
+        -1:
+            1:
+                bonus: 90
+                bonusText: reduction to effective distance traveled for jump fatigue
+                unitID: 105
         3340:
             1:
                 bonus: 10
@@ -4178,6 +4213,11 @@
     radius: 277.0
     soundID: 20074
     traits:
+        -1:
+            1:
+                bonus: 90
+                bonusText: reduction to effective distance traveled for jump fatigue
+                unitID: 105
         3340:
             1:
                 bonus: 10
@@ -4219,6 +4259,11 @@
     radius: 149.0
     soundID: 20074
     traits:
+        -1:
+            1:
+                bonus: 90
+                bonusText: reduction to effective distance traveled for jump fatigue
+                unitID: 105
         3340:
             1:
                 bonus: 10
@@ -4260,6 +4305,11 @@
     radius: 553.0
     soundID: 20074
     traits:
+        -1:
+            1:
+                bonus: 90
+                bonusText: reduction to effective distance traveled for jump fatigue
+                unitID: 105
         3340:
             1:
                 bonus: 5
@@ -5470,6 +5520,11 @@
     radius: 350.0
     soundID: 20063
     traits:
+        -1:
+            1:
+                bonus: 90
+                bonusText: reduction to effective distance traveled for jump fatigue
+                unitID: 105
         3343:
             1:
                 bonus: 5
@@ -6327,7 +6382,7 @@
 2354:
     iconID: 10046
 2355:
-    iconID: 80
+    iconID: 21378
 2356:
     iconID: 21
 2358:
@@ -7923,6 +7978,11 @@
     radius: 450.0
     soundID: 20066
     traits:
+        -1:
+            1:
+                bonus: 90
+                bonusText: reduction to effective distance traveled for jump fatigue
+                unitID: 105
         3184:
             1:
                 bonus: 5
@@ -9757,6 +9817,7 @@
 3626:
     graphicID: 10670
     radius: 6063.0
+    soundID: 20174
 3627:
     iconID: 26
 3628:
@@ -9834,11 +9895,11 @@
     graphicID: 1064
     radius: 350.0
 3653:
-    iconID: 80
+    iconID: 21378
 3654:
     iconID: 21
 3655:
-    iconID: 80
+    iconID: 21378
 3656:
     iconID: 21
 3657:
@@ -9860,11 +9921,11 @@
     graphicID: 2910
     radius: 6800.0
 3663:
-    iconID: 80
+    iconID: 21378
 3664:
     iconID: 21
 3665:
-    iconID: 80
+    iconID: 21378
 3666:
     iconID: 21
 3667:
@@ -10845,7 +10906,7 @@
 3984:
     iconID: 112
 3986:
-    iconID: 80
+    iconID: 21378
 3987:
     graphicID: 2035
     iconID: 112
@@ -10859,7 +10920,7 @@
 3990:
     iconID: 112
 3991:
-    iconID: 80
+    iconID: 21378
 3992:
     iconID: 10204
 3993:
@@ -11492,11 +11553,11 @@
 4295:
     iconID: 21
 4296:
-    iconID: 80
+    iconID: 21378
 4298:
     iconID: 80
 4299:
-    iconID: 80
+    iconID: 21378
 4300:
     iconID: 80
 4301:
@@ -11933,6 +11994,11 @@
     sofDnaAddition: mesh?quafeultra_red;quafeultra_reddark
     soundID: 20074
     traits:
+        -1:
+            1:
+                bonus: 90
+                bonusText: reduction to effective distance traveled for jump fatigue
+                unitID: 105
         3340:
             1:
                 bonus: 10
@@ -12018,6 +12084,11 @@
     sofDnaAddition: mesh?quafeultra_blue;quafeultra_bluedark
     soundID: 20074
     traits:
+        -1:
+            1:
+                bonus: 90
+                bonusText: reduction to effective distance traveled for jump fatigue
+                unitID: 105
         3340:
             1:
                 bonus: 10
@@ -12470,29 +12541,29 @@
     iconID: 76
     radius: 100.0
 5683:
-    iconID: 80
+    iconID: 21378
 5693:
-    iconID: 80
+    iconID: 21378
 5697:
-    iconID: 80
+    iconID: 21378
 5719:
-    iconID: 80
+    iconID: 21378
 5721:
-    iconID: 80
+    iconID: 21378
 5723:
-    iconID: 80
+    iconID: 21378
 5743:
-    iconID: 80
+    iconID: 21378
 5745:
-    iconID: 80
+    iconID: 21378
 5747:
-    iconID: 80
+    iconID: 21378
 5755:
-    iconID: 80
+    iconID: 21378
 5757:
-    iconID: 80
+    iconID: 21378
 5759:
-    iconID: 80
+    iconID: 21378
 5829:
     iconID: 77
 5831:
@@ -13928,42 +13999,53 @@
 9875:
     graphicID: 3797
     radius: 5213.0
+    soundID: 20174
 9876:
     graphicID: 3772
     radius: 12832.0
+    soundID: 20174
 9877:
     graphicID: 3392
     radius: 15321.0
+    soundID: 20174
 9878:
     graphicID: 3774
     radius: 8066.0
+    soundID: 20174
 9879:
     graphicID: 3775
     radius: 7944.0
+    soundID: 20174
 9880:
     graphicID: 3776
     radius: 4758.0
+    soundID: 20174
 9881:
     graphicID: 3368
     radius: 12350.0
+    soundID: 20174
 9882:
     graphicID: 3778
     radius: 6941.0
+    soundID: 20174
 9883:
     graphicID: 3779
     radius: 9239.0
 9884:
     graphicID: 3780
     radius: 4110.0
+    soundID: 20174
 9885:
     graphicID: 3781
     radius: 24904.0
+    soundID: 20174
 9886:
     graphicID: 3782
     radius: 27646.0
 9887:
     graphicID: 3783
     radius: 8380.0
+    soundID: 20174
 9888:
     graphicID: 3784
     radius: 7005.0
@@ -13973,30 +14055,37 @@
 9890:
     graphicID: 3786
     radius: 6578.0
+    soundID: 20174
 9891:
     graphicID: 3787
     radius: 8000.0
 9892:
     graphicID: 3788
     radius: 8284.0
+    soundID: 20174
 9893:
     graphicID: 3790
     radius: 9958.0
+    soundID: 20174
 9894:
     graphicID: 3791
     radius: 7678.0
+    soundID: 20174
 9895:
     graphicID: 3792
     radius: 10966.0
+    soundID: 20174
 9896:
     graphicID: 3793
     radius: 14675.0
+    soundID: 20174
 9897:
     graphicID: 3794
     radius: 6647.0
 9898:
     graphicID: 3795
     radius: 5957.0
+    soundID: 20174
 9899:
     iconID: 2053
     radius: 1.0
@@ -14409,6 +14498,7 @@
 10119:
     graphicID: 1680
     radius: 205.0
+    soundID: 20177
 10120:
     graphicID: 1681
     radius: 150.0
@@ -14435,6 +14525,7 @@
 10127:
     graphicID: 1685
     radius: 300.0
+    soundID: 20176
 10128:
     graphicID: 1686
     radius: 1.0
@@ -17044,7 +17135,7 @@
 11369:
     graphicID: 2069
     radius: 3500.0
-    soundID: 20
+    soundID: 20172
 11370:
     iconID: 2106
 11371:
@@ -19962,6 +20053,10 @@
         -1:
             1:
                 bonusText: Can fit <a href=showinfo:28654>Warp Disruption Field Generator</a>
+            2:
+                bonus: 20
+                bonusText: bonus to all shield resistances
+                unitID: 105
         3334:
             1:
                 bonus: 5
@@ -19970,14 +20065,17 @@
                     Assault Missile</a> damage
                 unitID: 105
             2:
-                bonus: 4
-                bonusText: bonus to all shield resistances
+                bonus: 5
+                bonusText: bonus to Rapid <a href=showinfo:3321>Light Missile</a>,
+                    <a href=showinfo:3324>Heavy Missile</a> and <a href=showinfo:25719>Heavy
+                    Assault Missile</a> Launcher rate of fire
                 unitID: 105
         28609:
             1:
                 bonus: 10
-                bonusText: bonus to <a href=showinfo:3324>Heavy Missile</a> and <a
-                    href=showinfo:25719>Heavy Assault Missile</a> max velocity
+                bonusText: bonus to <a href=showinfo:3321>Light Missile</a>, <a href=showinfo:3324>Heavy
+                    Missile</a> and <a href=showinfo:25719>Heavy Assault Missile</a>
+                    max velocity
                 unitID: 105
             2:
                 bonus: 5
@@ -20346,6 +20444,10 @@
         -1:
             1:
                 bonusText: Can fit <a href=showinfo:28654>Warp Disruption Field Generator</a>
+            2:
+                bonus: 20
+                bonusText: bonus to all shield resistances
+                unitID: 105
         3333:
             1:
                 bonus: 5
@@ -20353,8 +20455,9 @@
                     rate of fire
                 unitID: 105
             2:
-                bonus: 4
-                bonusText: bonus to all shield resistances
+                bonus: 5
+                bonusText: bonus to <a href=showinfo:3305>Medium Projectile Turret</a>
+                    damage
                 unitID: 105
         28609:
             1:
@@ -20503,6 +20606,10 @@
         -1:
             1:
                 bonusText: Can fit <a href=showinfo:28654>Warp Disruption Field Generator</a>
+            2:
+                bonus: 20
+                bonusText: bonus to all armor resistances
+                unitID: 105
         3335:
             1:
                 bonus: 10
@@ -20510,14 +20617,15 @@
                     activation cost
                 unitID: 105
             2:
-                bonus: 4
-                bonusText: bonus to all armor resistances
+                bonus: 5
+                bonusText: bonus to <a href=showinfo:3306>Medium Energy Turret</a>
+                    damage
                 unitID: 105
         28609:
             1:
-                bonus: 5
+                bonus: 10
                 bonusText: bonus to <a href=showinfo:3306>Medium Energy Turret</a>
-                    rate of fire
+                    optimal range
                 unitID: 105
             2:
                 bonus: 5
@@ -20660,21 +20768,26 @@
         -1:
             1:
                 bonusText: Can fit <a href=showinfo:28654>Warp Disruption Field Generator</a>
+            2:
+                bonus: 20
+                bonusText: bonus to all armor resistances
+                unitID: 105
         3332:
             1:
                 bonus: 5
                 bonusText: bonus to <a href=showinfo:3304>Medium Hybrid Turret</a>
-                    damage
+                    rate of fire
                 unitID: 105
             2:
-                bonus: 4
-                bonusText: bonus to all armor resistances
+                bonus: 10
+                bonusText: bonus to <a href=showinfo:3304>Medium Hybrid Turret</a>
+                    tracking speed
                 unitID: 105
         28609:
             1:
                 bonus: 10
                 bonusText: bonus to <a href=showinfo:3304>Medium Hybrid Turret</a>
-                    falloff
+                    optimal range
                 unitID: 105
             2:
                 bonus: 5
@@ -21977,6 +22090,10 @@
                     to 5 seconds
             3:
                 bonusText: Immune to all <a href=showinfo:442>Cargo Scanners</a>
+            4:
+                bonus: 90
+                bonusText: reduction to effective distance traveled for jump fatigue
+                unitID: 105
         3342:
             1:
                 bonus: 5
@@ -22039,6 +22156,10 @@
                 bonus: 100
                 bonusText: bonus to the benefits of overheating Afterburners, Microwarpdrives,
                     Local Repair Modules, and Resistance Modules
+                unitID: 105
+            3:
+                bonus: 90
+                bonusText: reduction to effective distance traveled for jump fatigue
                 unitID: 105
         3342:
             1:
@@ -22106,6 +22227,10 @@
                     to 5 seconds
             3:
                 bonusText: Immune to all <a href=showinfo:442>Cargo Scanners</a>
+            4:
+                bonus: 90
+                bonusText: reduction to effective distance traveled for jump fatigue
+                unitID: 105
         3343:
             1:
                 bonus: 5
@@ -22173,6 +22298,10 @@
                     to 5 seconds
             3:
                 bonusText: Immune to all <a href=showinfo:442>Cargo Scanners</a>
+            4:
+                bonus: 90
+                bonusText: reduction to effective distance traveled for jump fatigue
+                unitID: 105
         3341:
             1:
                 bonus: 5
@@ -22240,6 +22369,10 @@
                     to 5 seconds
             3:
                 bonusText: Immune to all <a href=showinfo:442>Cargo Scanners</a>
+            4:
+                bonus: 90
+                bonusText: reduction to effective distance traveled for jump fatigue
+                unitID: 105
         3340:
             1:
                 bonus: 5
@@ -22303,6 +22436,10 @@
                 bonusText: bonus to the benefits of overheating Afterburners, Microwarpdrives,
                     Local Repair Modules, and Resistance Modules
                 unitID: 105
+            3:
+                bonus: 90
+                bonusText: reduction to effective distance traveled for jump fatigue
+                unitID: 105
         3340:
             1:
                 bonus: 7.5
@@ -22365,6 +22502,10 @@
                 bonusText: bonus to the benefits of overheating Afterburners, Microwarpdrives,
                     Local Repair Modules, and Resistance Modules
                 unitID: 105
+            3:
+                bonus: 90
+                bonusText: reduction to effective distance traveled for jump fatigue
+                unitID: 105
         3341:
             1:
                 bonus: 7.5
@@ -22426,6 +22567,10 @@
                 bonus: 100
                 bonusText: bonus to the benefits of overheating Afterburners, Microwarpdrives,
                     Local Repair Modules, and Resistance Modules
+                unitID: 105
+            3:
+                bonus: 90
+                bonusText: reduction to effective distance traveled for jump fatigue
                 unitID: 105
         3343:
             1:
@@ -22776,6 +22921,7 @@
 13034:
     graphicID: 1684
     radius: 79.0
+    soundID: 20178
 13035:
     graphicID: 345
     radius: 50.0
@@ -24283,7 +24429,7 @@
     iconID: 371
     radius: 100.0
 13886:
-    graphicID: 11127
+    graphicID: 11234
     iconID: 376
     radius: 10.0
 13887:
@@ -27192,7 +27338,7 @@
     iconID: 376
     radius: 10.0
 15828:
-    graphicID: 11127
+    graphicID: 11234
     iconID: 376
     radius: 10.0
 15829:
@@ -29864,6 +30010,7 @@
 16831:
     graphicID: 2505
     radius: 2636.0
+    soundID: 20179
 16832:
     iconID: 1192
 16836:
@@ -29909,7 +30056,7 @@
 16849:
     graphicID: 2069
     radius: 3500.0
-    soundID: 20
+    soundID: 20172
 16850:
     graphicID: 1706
     radius: 300.0
@@ -29925,6 +30072,7 @@
 16854:
     graphicID: 1683
     radius: 60.0
+    soundID: 20173
 16855:
     graphicID: 1712
     radius: 918.0
@@ -29947,6 +30095,7 @@
 16861:
     graphicID: 1684
     radius: 79.0
+    soundID: 20178
 16862:
     graphicID: 2369
     radius: 650.0
@@ -29959,6 +30108,7 @@
 16866:
     graphicID: 1685
     radius: 447.0
+    soundID: 20176
 16867:
     graphicID: 2751
     radius: 400.0
@@ -33647,6 +33797,7 @@
 17784:
     graphicID: 2374
     radius: 459.0
+    soundID: 20181
 17785:
     graphicID: 2299
     radius: 550.0
@@ -35270,7 +35421,7 @@
 18632:
     graphicID: 2505
     radius: 2636.0
-    soundID: 31
+    soundID: 20179
 18633:
     graphicID: 2363
     radius: 1239.0
@@ -37027,6 +37178,11 @@
     radius: 220.0
     soundID: 20063
     traits:
+        -1:
+            1:
+                bonus: 90
+                bonusText: reduction to effective distance traveled for jump fatigue
+                unitID: 105
         3343:
             1:
                 bonus: 5
@@ -37639,6 +37795,10 @@
                 bonusText: reduction in <a href=showinfo:1333>Reinforced Bulkhead</a>
                     CPU requirements
                 unitID: 105
+            2:
+                bonus: 90
+                bonusText: reduction to effective distance traveled for jump fatigue
+                unitID: 105
         20524:
             1:
                 bonus: 5
@@ -37682,6 +37842,10 @@
                 bonus: 100
                 bonusText: reduction in <a href=showinfo:1333>Reinforced Bulkhead</a>
                     CPU requirements
+                unitID: 105
+            2:
+                bonus: 90
+                bonusText: reduction to effective distance traveled for jump fatigue
                 unitID: 105
         20526:
             1:
@@ -37727,6 +37891,10 @@
                 bonusText: reduction in <a href=showinfo:1333>Reinforced Bulkhead</a>
                     CPU requirements
                 unitID: 105
+            2:
+                bonus: 90
+                bonusText: reduction to effective distance traveled for jump fatigue
+                unitID: 105
         20527:
             1:
                 bonus: 5
@@ -37770,6 +37938,10 @@
                 bonus: 100
                 bonusText: reduction in <a href=showinfo:1333>Reinforced Bulkhead</a>
                     CPU requirements
+                unitID: 105
+            2:
+                bonus: 90
+                bonusText: reduction to effective distance traveled for jump fatigue
                 unitID: 105
         20528:
             1:
@@ -40402,15 +40574,15 @@
     graphicID: 1828
     radius: 42.93
 21504:
-    iconID: 80
+    iconID: 21378
 21505:
     iconID: 21
 21506:
-    iconID: 80
+    iconID: 21378
 21507:
     iconID: 21
 21508:
-    iconID: 80
+    iconID: 21378
 21509:
     iconID: 21
 21510:
@@ -42519,6 +42691,10 @@
             3:
                 bonusText: <a href=showinfo:11579>Cloak</a> reactivation delay reduced
                     to 5 seconds
+            4:
+                bonus: 50
+                bonusText: reduction to effective distance traveled for jump fatigue
+                unitID: 105
         3339:
             1:
                 bonus: 10
@@ -42616,6 +42792,10 @@
             3:
                 bonusText: <a href=showinfo:11579>Cloak</a> reactivation delay reduced
                     to 5 seconds
+            4:
+                bonus: 50
+                bonusText: reduction to effective distance traveled for jump fatigue
+                unitID: 105
         3336:
             1:
                 bonus: 5
@@ -42712,6 +42892,10 @@
             3:
                 bonusText: <a href=showinfo:11579>Cloak</a> reactivation delay reduced
                     to 5 seconds
+            4:
+                bonus: 50
+                bonusText: reduction to effective distance traveled for jump fatigue
+                unitID: 105
         3338:
             1:
                 bonus: 5
@@ -42809,6 +42993,10 @@
             3:
                 bonusText: <a href=showinfo:11579>Cloak</a> reactivation delay reduced
                     to 5 seconds
+            4:
+                bonus: 50
+                bonusText: reduction to effective distance traveled for jump fatigue
+                unitID: 105
         3337:
             1:
                 bonus: 5
@@ -46780,7 +46968,7 @@
     radius: 9213.0
     soundID: 31
 23523:
-    graphicID: 20250
+    graphicID: 1119
     radius: 15.0
 23524:
     iconID: 1084
@@ -47198,12 +47386,12 @@
 23708:
     iconID: 1084
 23709:
-    graphicID: 2774
+    graphicID: 2778
     radius: 15.0
 23710:
     iconID: 1084
 23711:
-    graphicID: 1099
+    graphicID: 1084
     radius: 15.0
 23712:
     iconID: 1084
@@ -49455,6 +49643,7 @@
 24245:
     graphicID: 3465
     radius: 2933.0
+    soundID: 20180
 24246:
     iconID: 2855
 24247:
@@ -49854,6 +50043,7 @@
 24453:
     graphicID: 3465
     radius: 2933.0
+    soundID: 20180
 24454:
     graphicID: 302
     radius: 109.0
@@ -51937,6 +52127,7 @@
 25232:
     graphicID: 1259
     radius: 4706.0
+    soundID: 20180
 25233:
     iconID: 33
 25235:
@@ -54020,18 +54211,21 @@
 26231:
     graphicID: 3790
     radius: 9958.0
+    soundID: 20174
 26232:
     graphicID: 3772
     radius: 12832.0
 26233:
     graphicID: 3774
     radius: 8066.0
+    soundID: 20174
 26234:
     graphicID: 3775
     radius: 7944.0
 26235:
     graphicID: 3779
     radius: 9239.0
+    soundID: 20174
 26236:
     graphicID: 3368
     radius: 12350.0
@@ -54041,6 +54235,7 @@
 26238:
     graphicID: 3786
     radius: 6578.0
+    soundID: 20174
 26239:
     graphicID: 3783
     radius: 8380.0
@@ -55728,6 +55923,7 @@
 26900:
     graphicID: 2505
     radius: 2636.0
+    soundID: 20179
 26901:
     iconID: 2541
 26902:
@@ -57874,7 +58070,7 @@
 27902:
     iconID: 33
 27904:
-    iconID: 80
+    iconID: 21378
 27905:
     iconID: 80
 27906:
@@ -57936,15 +58132,15 @@
     graphicID: 3105
     radius: 14.0
 27930:
-    iconID: 80
+    iconID: 21378
 27931:
     iconID: 80
 27932:
-    iconID: 80
+    iconID: 21378
 27933:
     iconID: 80
 27934:
-    iconID: 80
+    iconID: 21378
 27935:
     iconID: 80
 27936:
@@ -58329,6 +58525,7 @@
 28070:
     graphicID: 3789
     radius: 12013.0
+    soundID: 20174
 28071:
     graphicID: 3797
     radius: 17443.0
@@ -58729,7 +58926,7 @@
     graphicID: 2613
     radius: 629.0
 28197:
-    graphicID: 1115
+    graphicID: 1120
     radius: 15.0
 28198:
     iconID: 1084
@@ -58739,7 +58936,7 @@
 28200:
     iconID: 1084
 28201:
-    graphicID: 1100
+    graphicID: 2764
     radius: 15.0
 28202:
     iconID: 1084
@@ -58749,7 +58946,7 @@
 28204:
     iconID: 1084
 28205:
-    graphicID: 1095
+    graphicID: 1109
     radius: 15.0
 28206:
     iconID: 1084
@@ -59106,6 +59303,10 @@
             5:
                 bonusText: Can use 3 <a href=showinfo:3348>Warfare Link</a> modules
                     simultaneously
+            6:
+                bonus: 90
+                bonusText: reduction to effective distance traveled for jump fatigue
+                unitID: 105
         28374:
             1:
                 bonus: 5
@@ -59735,6 +59936,10 @@
             4:
                 bonusText: Can use 3 <a href=showinfo:3348>Warfare Link</a> modules
                     simultaneously
+            5:
+                bonus: 90
+                bonusText: reduction to effective distance traveled for jump fatigue
+                unitID: 105
         29637:
             1:
                 bonus: 5
@@ -59811,7 +60016,7 @@
 28631:
     iconID: 33
 28646:
-    iconID: 1444
+    iconID: 21379
 28647:
     iconID: 21
 28650:
@@ -60618,6 +60823,10 @@
                 bonusText: reduction in <a href=showinfo:1333>Reinforced Bulkhead</a>
                     CPU requirements
                 unitID: 105
+            2:
+                bonus: 90
+                bonusText: reduction to effective distance traveled for jump fatigue
+                unitID: 105
         20526:
             1:
                 bonus: 5
@@ -60675,6 +60884,10 @@
                 bonus: 100
                 bonusText: reduction in <a href=showinfo:1333>Reinforced Bulkhead</a>
                     CPU requirements
+                unitID: 105
+            2:
+                bonus: 90
+                bonusText: reduction to effective distance traveled for jump fatigue
                 unitID: 105
         20528:
             1:
@@ -60734,6 +60947,10 @@
                 bonusText: reduction in <a href=showinfo:1333>Reinforced Bulkhead</a>
                     CPU requirements
                 unitID: 105
+            2:
+                bonus: 90
+                bonusText: reduction to effective distance traveled for jump fatigue
+                unitID: 105
         20527:
             1:
                 bonus: 5
@@ -60791,6 +61008,10 @@
                 bonus: 100
                 bonusText: reduction in <a href=showinfo:1333>Reinforced Bulkhead</a>
                     CPU requirements
+                unitID: 105
+            2:
+                bonus: 90
+                bonusText: reduction to effective distance traveled for jump fatigue
                 unitID: 105
         20524:
             1:
@@ -60996,84 +61217,109 @@
 28936:
     graphicID: 20297
     radius: 300.0
+    soundID: 20182
 28937:
     graphicID: 20297
     radius: 300.0
+    soundID: 20182
 28938:
     graphicID: 20298
     radius: 300.0
+    soundID: 20182
 28939:
     graphicID: 20297
     radius: 300.0
+    soundID: 20182
 28940:
     graphicID: 20297
     radius: 300.0
+    soundID: 20182
 28941:
     graphicID: 20298
     radius: 300.0
+    soundID: 20182
 28942:
     graphicID: 20297
     radius: 300.0
+    soundID: 20182
 28943:
     graphicID: 20297
     radius: 300.0
+    soundID: 20182
 28944:
     graphicID: 20298
     radius: 300.0
+    soundID: 20182
 28945:
     graphicID: 20297
     radius: 300.0
+    soundID: 20182
 28946:
     graphicID: 20297
     radius: 300.0
+    soundID: 20182
 28948:
     graphicID: 20297
     radius: 300.0
+    soundID: 20182
 28949:
     graphicID: 20297
     radius: 300.0
+    soundID: 20182
 28951:
     graphicID: 20297
     radius: 300.0
+    soundID: 20182
 28952:
     graphicID: 20297
     radius: 300.0
+    soundID: 20182
 28954:
     graphicID: 20297
     radius: 300.0
 28955:
     graphicID: 20297
     radius: 300.0
+    soundID: 20182
 28957:
     graphicID: 20297
     radius: 300.0
+    soundID: 20182
 28958:
     graphicID: 20297
     radius: 300.0
+    soundID: 20182
 28960:
     graphicID: 20297
     radius: 300.0
+    soundID: 20182
 28961:
     graphicID: 20297
     radius: 300.0
+    soundID: 20182
 28963:
     graphicID: 20297
     radius: 300.0
 28964:
     graphicID: 20297
     radius: 300.0
+    soundID: 20182
 28966:
     graphicID: 20297
     radius: 300.0
+    soundID: 20182
 28967:
     graphicID: 20297
     radius: 300.0
+    soundID: 20182
 28969:
     graphicID: 20297
     radius: 300.0
+    soundID: 20182
 28970:
     graphicID: 20297
     radius: 300.0
+    soundID: 20182
 28972:
     graphicID: 2092
     iconID: 1171
@@ -61095,6 +61341,7 @@
 28979:
     graphicID: 20298
     radius: 300.0
+    soundID: 20182
 28980:
     graphicID: 20298
     radius: 300.0
@@ -61113,12 +61360,15 @@
 28985:
     graphicID: 20298
     radius: 300.0
+    soundID: 20182
 28986:
     graphicID: 20298
     radius: 300.0
+    soundID: 20182
 28987:
     graphicID: 20298
     radius: 300.0
+    soundID: 20182
 28988:
     graphicID: 20298
     radius: 300.0
@@ -61131,12 +61381,15 @@
 28991:
     graphicID: 20298
     radius: 300.0
+    soundID: 20182
 28992:
     graphicID: 20298
     radius: 300.0
+    soundID: 20182
 28993:
     graphicID: 20298
     radius: 300.0
+    soundID: 20182
 28994:
     graphicID: 20298
     radius: 300.0
@@ -69166,8 +69419,7 @@
     radius: 350.0
     soundID: 31
 32386:
-    graphicID: 3715
-    radius: 1274.0
+    graphicID: 20956
 32387:
     graphicID: 3715
     radius: 1274.0
@@ -69627,6 +69879,11 @@
     sofDnaAddition: mesh?quafeultra_white;quafeultra_whitedark
     soundID: 20074
     traits:
+        -1:
+            1:
+                bonus: 90
+                bonusText: reduction to effective distance traveled for jump fatigue
+                unitID: 105
         3340:
             1:
                 bonus: 10
@@ -75018,6 +75275,10 @@
             4:
                 bonusText: Can use 3 <a href=showinfo:3348>Warfare Link</a> modules
                     simultaneously
+            5:
+                bonus: 90
+                bonusText: reduction to effective distance traveled for jump fatigue
+                unitID: 105
         29637:
             1:
                 bonus: 5
@@ -75102,6 +75363,10 @@
             5:
                 bonusText: Can use 3 <a href=showinfo:3348>Warfare Link</a> modules
                     simultaneously
+            6:
+                bonus: 90
+                bonusText: reduction to effective distance traveled for jump fatigue
+                unitID: 105
         28374:
             1:
                 bonus: 5
@@ -75157,6 +75422,11 @@
     radius: 553.0
     soundID: 20074
     traits:
+        -1:
+            1:
+                bonus: 90
+                bonusText: reduction to effective distance traveled for jump fatigue
+                unitID: 105
         3340:
             1:
                 bonus: 5
@@ -75200,6 +75470,11 @@
     radius: 279.0
     soundID: 20070
     traits:
+        -1:
+            1:
+                bonus: 90
+                bonusText: reduction to effective distance traveled for jump fatigue
+                unitID: 105
         3342:
             1:
                 bonus: 5
@@ -75243,6 +75518,11 @@
     radius: 617.0
     soundID: 20078
     traits:
+        -1:
+            1:
+                bonus: 90
+                bonusText: reduction to effective distance traveled for jump fatigue
+                unitID: 105
         3341:
             1:
                 bonus: 5
@@ -75286,6 +75566,11 @@
     radius: 350.0
     soundID: 20063
     traits:
+        -1:
+            1:
+                bonus: 90
+                bonusText: reduction to effective distance traveled for jump fatigue
+                unitID: 105
         3343:
             1:
                 bonus: 5
@@ -76984,6 +77269,18 @@
         - 165
     radius: 250.0
     soundID: 20072
+    traits:
+        3336:
+            1:
+                bonus: 5
+                bonusText: bonus to <a href=showinfo:3307>Large Hybrid Turret</a>
+                    rate of fire
+                unitID: 105
+            2:
+                bonus: 7.5
+                bonusText: bonus to <a href=showinfo:3307>Large Hybrid Turret</a>
+                    tracking speed
+                unitID: 105
 34119:
     graphicID: 64
 34121:
@@ -77190,3 +77487,850 @@
     graphicID: 1771
     radius: 39.0
     soundID: 20074
+34199:
+    iconID: 0
+34210:
+    iconID: 21375
+34211:
+    iconID: 21376
+34213:
+    graphicID: 2121
+    radius: 400.0
+    traits:
+        3339:
+            1:
+                bonus: 7.5
+                bonusText: bonus to <a href=showinfo:3309>Large Energy Turret</a>
+                    optimal range
+                unitID: 105
+            2:
+                bonus: 7.5
+                bonusText: bonus to <a href=showinfo:3309>Large Energy Turret</a>
+                    tracking speed
+                unitID: 105
+34214:
+    graphicID: 296
+34215:
+    graphicID: 20312
+    radius: 400.0
+    traits:
+        3339:
+            1:
+                bonus: 7.5
+                bonusText: bonus to <a href=showinfo:3309>Large Energy Turret</a>
+                    optimal range
+                unitID: 105
+            2:
+                bonus: 7.5
+                bonusText: bonus to <a href=showinfo:3309>Large Energy Turret</a>
+                    tracking speed
+                unitID: 105
+34216:
+    graphicID: 296
+34217:
+    graphicID: 20316
+    radius: 400.0
+    traits:
+        3339:
+            1:
+                bonus: 7.5
+                bonusText: bonus to <a href=showinfo:3309>Large Energy Turret</a>
+                    optimal range
+                unitID: 105
+            2:
+                bonus: 7.5
+                bonusText: bonus to <a href=showinfo:3309>Large Energy Turret</a>
+                    tracking speed
+                unitID: 105
+34218:
+    graphicID: 296
+34219:
+    graphicID: 20934
+    radius: 250.0
+    traits:
+        -1:
+            1:
+                bonus: 100
+                bonusText: bonus to <a href=showinfo:3309>Large Energy Turret</a>
+                    damage
+                unitID: 105
+            2:
+                bonus: 100
+                bonusText: bonus to <a href=showinfo:24348>Tractor Beams</a> range
+                    and velocity
+                unitID: 105
+            3:
+                bonus: 70
+                bonusText: reduction in <a href=showinfo:4385>Micro Jump Drive</a>
+                    reactivation delay
+                unitID: 105
+            4:
+                bonusText: Can fit <a href=showinfo:33400>Bastion modules</a>
+        3339:
+            1:
+                bonus: 5
+                bonusText: bonus to ship capacitor capacity
+                unitID: 105
+            2:
+                bonus: 7.5
+                bonusText: bonus to <a href=showinfo:3309>Large Energy Turret</a>
+                    optimal range
+                unitID: 105
+        28667:
+            1:
+                bonus: 7.5
+                bonusText: bonus to <a href=showinfo:3393>Armor Repairer</a> amount
+                unitID: 105
+            2:
+                bonus: 5
+                bonusText: bonus to <a href=showinfo:3309>Large Energy Turret</a>
+                    damage
+                unitID: 105
+34220:
+    graphicID: 297
+34221:
+    graphicID: 20935
+    radius: 250.0
+    traits:
+        -1:
+            1:
+                bonus: 100
+                bonusText: bonus to <a href=showinfo:3309>Large Energy Turret</a>
+                    damage
+                unitID: 105
+            2:
+                bonus: 100
+                bonusText: bonus to <a href=showinfo:24348>Tractor Beams</a> range
+                    and velocity
+                unitID: 105
+            3:
+                bonus: 70
+                bonusText: reduction in <a href=showinfo:4385>Micro Jump Drive</a>
+                    reactivation delay
+                unitID: 105
+            4:
+                bonusText: Can fit <a href=showinfo:33400>Bastion modules</a>
+        3339:
+            1:
+                bonus: 5
+                bonusText: bonus to ship capacitor capacity
+                unitID: 105
+            2:
+                bonus: 7.5
+                bonusText: bonus to <a href=showinfo:3309>Large Energy Turret</a>
+                    optimal range
+                unitID: 105
+        28667:
+            1:
+                bonus: 7.5
+                bonusText: bonus to <a href=showinfo:3393>Armor Repairer</a> amount
+                unitID: 105
+            2:
+                bonus: 5
+                bonusText: bonus to <a href=showinfo:3309>Large Energy Turret</a>
+                    damage
+                unitID: 105
+34222:
+    graphicID: 297
+34223:
+    graphicID: 20936
+    radius: 250.0
+    traits:
+        -1:
+            1:
+                bonus: 100
+                bonusText: bonus to <a href=showinfo:3309>Large Energy Turret</a>
+                    damage
+                unitID: 105
+            2:
+                bonus: 100
+                bonusText: bonus to <a href=showinfo:24348>Tractor Beams</a> range
+                    and velocity
+                unitID: 105
+            3:
+                bonus: 70
+                bonusText: reduction in <a href=showinfo:4385>Micro Jump Drive</a>
+                    reactivation delay
+                unitID: 105
+            4:
+                bonusText: Can fit <a href=showinfo:33400>Bastion modules</a>
+        3339:
+            1:
+                bonus: 5
+                bonusText: bonus to <a href=showinfo:3309>Large Energy Turret</a>
+                    optimal range
+                unitID: 105
+            2:
+                bonus: 7.5
+                bonusText: bonus to <a href=showinfo:3309>Large Energy Turret</a>
+                    optimal range
+                unitID: 105
+        28667:
+            1:
+                bonus: 7.5
+                bonusText: bonus to <a href=showinfo:3393>Armor Repairer</a> amount
+                unitID: 105
+            2:
+                bonus: 5
+                bonusText: bonus to <a href=showinfo:3309>Large Energy Turret</a>
+                    damage
+                unitID: 105
+34224:
+    graphicID: 297
+34225:
+    graphicID: 2158
+    radius: 250.0
+    traits:
+        3338:
+            1:
+                bonus: 5
+                bonusText: bonus to Rapid <a href=showinfo:3324>Heavy Missile</a>,
+                    <a href=showinfo:3326>Cruise Missile</a> and <a href=showinfo:3325>Torpedo</a>
+                    Launcher rate of fire
+                unitID: 105
+            2:
+                bonus: 10
+                bonusText: bonus to <a href=showinfo:3326>Cruise Missile</a> and <a
+                    href=showinfo:3325>Torpedo</a> max velocity
+                unitID: 105
+34226:
+    graphicID: 43
+34227:
+    graphicID: 20937
+    radius: 250.0
+    traits:
+        3338:
+            1:
+                bonus: 5
+                bonusText: bonus to Rapid <a href=showinfo:3324>Heavy Missile</a>,
+                    <a href=showinfo:3326>Cruise Missile</a> and <a href=showinfo:3325>Torpedo</a>
+                    Launcher rate of fire
+                unitID: 105
+            2:
+                bonus: 10
+                bonusText: bonus to <a href=showinfo:3326>Cruise Missile</a> and <a
+                    href=showinfo:3325>Torpedo</a> max velocity
+                unitID: 105
+34228:
+    graphicID: 43
+34229:
+    graphicID: 20938
+    radius: 250.0
+    traits:
+        3338:
+            1:
+                bonus: 5
+                bonusText: bonus to Rapid <a href=showinfo:3324>Heavy Missile</a>,
+                    <a href=showinfo:3326>Cruise Missile</a> and <a href=showinfo:3325>Torpedo</a>
+                    Launcher rate of fire
+                unitID: 105
+            2:
+                bonus: 10
+                bonusText: bonus to <a href=showinfo:3326>Cruise Missile</a> and <a
+                    href=showinfo:3325>Torpedo</a> max velocity
+                unitID: 105
+34230:
+    graphicID: 43
+34231:
+    graphicID: 20939
+    radius: 250.0
+    traits:
+        -1:
+            1:
+                bonus: 100
+                bonusText: bonus to <a href=showinfo:3324>Heavy Missile</a>, <a href=showinfo:3326>Cruise
+                    Missile</a> and <a href=showinfo:3325>Torpedo</a> damage
+                unitID: 105
+            2:
+                bonus: 100
+                bonusText: bonus to <a href=showinfo:24348>Tractor Beam</a> range
+                    and velocity
+                unitID: 105
+            3:
+                bonus: 70
+                bonusText: reduction in <a href=showinfo:4385>Micro Jump Drive</a>
+                    reactivation delay
+                unitID: 105
+            4:
+                bonusText: Can fit <a href=showinfo:33400>Bastion modules</a>
+        3338:
+            1:
+                bonus: 10
+                bonusText: bonus to <a href=showinfo:3326>Cruise Missile</a> and <a
+                    href=showinfo:3325>Torpedo</a> max velocity
+                unitID: 105
+            2:
+                bonus: 5
+                bonusText: bonus to <a href=showinfo:3326>Cruise Missile</a> and <a
+                    href=showinfo:3325>Torpedo</a> explosion velocity
+                unitID: 105
+        28667:
+            1:
+                bonus: 7.5
+                bonusText: bonus to <a href=showinfo:3416>Shield Booster</a> amount
+                unitID: 105
+            2:
+                bonus: 10
+                bonusText: bonus to <a href=showinfo:19921>Target Painter</a> effectiveness
+                unitID: 105
+34232:
+    graphicID: 43
+34233:
+    graphicID: 20940
+    radius: 250.0
+    traits:
+        -1:
+            1:
+                bonus: 100
+                bonusText: bonus to <a href=showinfo:3324>Heavy Missile</a>, <a href=showinfo:3326>Cruise
+                    Missile</a> and <a href=showinfo:3325>Torpedo</a> damage
+                unitID: 105
+            2:
+                bonus: 100
+                bonusText: bonus to <a href=showinfo:24348>Tractor Beam</a> range
+                    and velocity
+                unitID: 105
+            3:
+                bonus: 70
+                bonusText: reduction in <a href=showinfo:4385>Micro Jump Drive</a>
+                    reactivation delay
+                unitID: 105
+            4:
+                bonusText: Can fit <a href=showinfo:33400>Bastion modules</a>
+        3338:
+            1:
+                bonus: 10
+                bonusText: bonus to <a href=showinfo:3326>Cruise Missile</a> and <a
+                    href=showinfo:3325>Torpedo</a> max velocity
+                unitID: 105
+            2:
+                bonus: 5
+                bonusText: bonus to <a href=showinfo:3326>Cruise Missile</a> and <a
+                    href=showinfo:3325>Torpedo</a> explosion velocity
+                unitID: 105
+        28667:
+            1:
+                bonus: 7.5
+                bonusText: bonus to <a href=showinfo:3416>Shield Booster</a> amount
+                unitID: 105
+            2:
+                bonus: 10
+                bonusText: bonus to <a href=showinfo:19921>Target Painter</a> effectiveness
+                unitID: 105
+34234:
+    graphicID: 43
+34235:
+    graphicID: 20941
+    radius: 250.0
+    traits:
+        -1:
+            1:
+                bonus: 100
+                bonusText: bonus to <a href=showinfo:3324>Heavy Missile</a>, <a href=showinfo:3326>Cruise
+                    Missile</a> and <a href=showinfo:3325>Torpedo</a> damage
+                unitID: 105
+            2:
+                bonus: 100
+                bonusText: bonus to <a href=showinfo:24348>Tractor Beam</a> range
+                    and velocity
+                unitID: 105
+            3:
+                bonus: 70
+                bonusText: reduction in <a href=showinfo:4385>Micro Jump Drive</a>
+                    reactivation delay
+                unitID: 105
+            4:
+                bonusText: Can fit <a href=showinfo:33400>Bastion modules</a>
+        3338:
+            1:
+                bonus: 10
+                bonusText: bonus to <a href=showinfo:3326>Cruise Missile</a> and <a
+                    href=showinfo:3325>Torpedo</a> max velocity
+                unitID: 105
+            2:
+                bonus: 5
+                bonusText: bonus to <a href=showinfo:3326>Cruise Missile</a> and <a
+                    href=showinfo:3325>Torpedo</a> explosion velocity
+                unitID: 105
+        28667:
+            1:
+                bonus: 7.5
+                bonusText: bonus to <a href=showinfo:3416>Shield Booster</a> amount
+                unitID: 105
+            2:
+                bonus: 10
+                bonusText: bonus to <a href=showinfo:19921>Target Painter</a> effectiveness
+                unitID: 105
+34236:
+    graphicID: 43
+34237:
+    graphicID: 20942
+    radius: 250.0
+    traits:
+        3336:
+            1:
+                bonus: 5
+                bonusText: bonus to <a href=showinfo:3307>Large Hybrid Turret</a>
+                    rate of fire
+                unitID: 105
+            2:
+                bonus: 7.5
+                bonusText: bonus to <a href=showinfo:3307>Large Hybrid Turret</a>
+                    tracking speed
+                unitID: 105
+34238:
+    graphicID: 64
+34239:
+    graphicID: 20943
+    radius: 250.0
+    traits:
+        3336:
+            1:
+                bonus: 5
+                bonusText: bonus to <a href=showinfo:3307>Large Hybrid Turret</a>
+                    rate of fire
+                unitID: 105
+            2:
+                bonus: 7.5
+                bonusText: bonus to <a href=showinfo:3307>Large Hybrid Turret</a>
+                    tracking speed
+                unitID: 105
+34240:
+    graphicID: 64
+34241:
+    graphicID: 20944
+    radius: 250.0
+    traits:
+        -1:
+            1:
+                bonus: 100
+                bonusText: bonus to <a href=showinfo:3307>Large Hybrid Turret</a>
+                    damage
+                unitID: 105
+            2:
+                bonus: 100
+                bonusText: bonus to <a href=showinfo:24348>Tractor Beam</a> range
+                    and velocity
+                unitID: 105
+            3:
+                bonus: 70
+                bonusText: reduction in <a href=showinfo:4385>Micro Jump Drive</a>
+                    reactivation delay
+                unitID: 105
+            4:
+                bonusText: Can fit <a href=showinfo:33400>Bastion modules</a>
+        3336:
+            1:
+                bonus: 5
+                bonusText: bonus to <a href=showinfo:3307>Large Hybrid Turret</a>
+                    damage
+                unitID: 105
+            2:
+                bonus: 10
+                bonusText: bonus to <a href=showinfo:3307>Large Hybrid Turret</a>
+                    falloff
+                unitID: 105
+        28667:
+            1:
+                bonus: 7.5
+                bonusText: bonus to <a href=showinfo:3393>Armor Repairer</a> amount
+                unitID: 105
+            2:
+                bonus: 7.5
+                bonusText: bonus to <a href=showinfo:3307>Large Hybrid Turret</a>
+                    tracking speed
+                unitID: 105
+34242:
+    graphicID: 64
+34243:
+    graphicID: 20945
+    radius: 250.0
+    traits:
+        -1:
+            1:
+                bonus: 100
+                bonusText: bonus to <a href=showinfo:3307>Large Hybrid Turret</a>
+                    damage
+                unitID: 105
+            2:
+                bonus: 100
+                bonusText: bonus to <a href=showinfo:24348>Tractor Beam</a> range
+                    and velocity
+                unitID: 105
+            3:
+                bonus: 70
+                bonusText: reduction in <a href=showinfo:4385>Micro Jump Drive</a>
+                    reactivation delay
+                unitID: 105
+            4:
+                bonusText: Can fit <a href=showinfo:33400>Bastion modules</a>
+        3336:
+            1:
+                bonus: 5
+                bonusText: bonus to <a href=showinfo:3307>Large Hybrid Turret</a>
+                    damage
+                unitID: 105
+            2:
+                bonus: 10
+                bonusText: bonus to <a href=showinfo:3307>Large Hybrid Turret</a>
+                    falloff
+                unitID: 105
+        28667:
+            1:
+                bonus: 7.5
+                bonusText: bonus to <a href=showinfo:3393>Armor Repairer</a> amount
+                unitID: 105
+            2:
+                bonus: 7.5
+                bonusText: bonus to <a href=showinfo:3307>Large Hybrid Turret</a>
+                    tracking speed
+                unitID: 105
+34244:
+    graphicID: 64
+34245:
+    graphicID: 20946
+    radius: 250.0
+    traits:
+        -1:
+            1:
+                bonus: 100
+                bonusText: bonus to <a href=showinfo:3307>Large Hybrid Turret</a>
+                    damage
+                unitID: 105
+            2:
+                bonus: 100
+                bonusText: bonus to <a href=showinfo:24348>Tractor Beam</a> range
+                    and velocity
+                unitID: 105
+            3:
+                bonus: 70
+                bonusText: reduction in <a href=showinfo:4385>Micro Jump Drive</a>
+                    reactivation delay
+                unitID: 105
+            4:
+                bonusText: Can fit <a href=showinfo:33400>Bastion modules</a>
+        3336:
+            1:
+                bonus: 5
+                bonusText: bonus to <a href=showinfo:3307>Large Hybrid Turret</a>
+                    damage
+                unitID: 105
+            2:
+                bonus: 10
+                bonusText: bonus to <a href=showinfo:3307>Large Hybrid Turret</a>
+                    falloff
+                unitID: 105
+        28667:
+            1:
+                bonus: 7.5
+                bonusText: bonus to <a href=showinfo:3393>Armor Repairer</a> amount
+                unitID: 105
+            2:
+                bonus: 7.5
+                bonusText: bonus to <a href=showinfo:3307>Large Hybrid Turret</a>
+                    tracking speed
+                unitID: 105
+34246:
+    graphicID: 64
+34247:
+    graphicID: 3205
+    radius: 250.0
+    traits:
+        3337:
+            1:
+                bonus: 5
+                bonusText: bonus to <a href=showinfo:3308>Large Projectile Turret</a>
+                    rate of fire
+                unitID: 105
+            2:
+                bonus: 5
+                bonusText: bonus to <a href=showinfo:3308>Large Projectile Turret</a>
+                    damage
+                unitID: 105
+34248:
+    graphicID: 48
+34249:
+    graphicID: 20947
+    radius: 250.0
+    traits:
+        3337:
+            1:
+                bonus: 5
+                bonusText: bonus to <a href=showinfo:3308>Large Projectile Turret</a>
+                    rate of fire
+                unitID: 105
+            2:
+                bonus: 5
+                bonusText: bonus to <a href=showinfo:3308>Large Projectile Turret</a>
+                    damage
+                unitID: 105
+34250:
+    graphicID: 48
+34251:
+    graphicID: 20948
+    radius: 250.0
+    traits:
+        3337:
+            1:
+                bonus: 5
+                bonusText: bonus to <a href=showinfo:3308>Large Projectile Turret</a>
+                    rate of fire
+                unitID: 105
+            2:
+                bonus: 5
+                bonusText: bonus to <a href=showinfo:3308>Large Projectile Turret</a>
+                    damage
+                unitID: 105
+34252:
+    graphicID: 48
+34253:
+    graphicID: 20949
+    radius: 250.0
+    traits:
+        -1:
+            1:
+                bonus: 100
+                bonusText: bonus to <a href=showinfo:3308>Large Projectile Turret</a>
+                    damage
+                unitID: 105
+            2:
+                bonus: 100
+                bonusText: bonus to <a href=showinfo:24348>Tractor Beam</a> range
+                    and velocity
+                unitID: 105
+            3:
+                bonus: 70
+                bonusText: reduction in <a href=showinfo:4385>Micro Jump Drive</a>
+                    reactivation delay
+                unitID: 105
+            4:
+                bonusText: Can fit <a href=showinfo:33400>Bastion modules</a>
+        3337:
+            1:
+                bonus: 5
+                bonusText: bonus to <a href=showinfo:3308>Large Projectile Turret</a>
+                    rate of fire
+                unitID: 105
+            2:
+                bonus: 10
+                bonusText: bonus to <a href=showinfo:3308>Large Projectile Turret</a>
+                    falloff
+                unitID: 105
+        28667:
+            1:
+                bonus: 7.5
+                bonusText: bonus to <a href=showinfo:3416>Shield Booster</a> amount
+                unitID: 105
+            2:
+                bonus: 7.5
+                bonusText: bonus to <a href=showinfo:3308>Large Projectile Turret</a>
+                    tracking speed
+                unitID: 105
+34254:
+    graphicID: 48
+34255:
+    graphicID: 20950
+    radius: 250.0
+    traits:
+        -1:
+            1:
+                bonus: 100
+                bonusText: bonus to <a href=showinfo:3308>Large Projectile Turret</a>
+                    damage
+                unitID: 105
+            2:
+                bonus: 100
+                bonusText: bonus to <a href=showinfo:24348>Tractor Beam</a> range
+                    and velocity
+                unitID: 105
+            3:
+                bonus: 70
+                bonusText: reduction in <a href=showinfo:4385>Micro Jump Drive</a>
+                    reactivation delay
+                unitID: 105
+            4:
+                bonusText: Can fit <a href=showinfo:33400>Bastion modules</a>
+        3337:
+            1:
+                bonus: 5
+                bonusText: bonus to <a href=showinfo:3308>Large Projectile Turret</a>
+                    rate of fire
+                unitID: 105
+            2:
+                bonus: 10
+                bonusText: bonus to <a href=showinfo:3308>Large Projectile Turret</a>
+                    falloff
+                unitID: 105
+        28667:
+            1:
+                bonus: 7.5
+                bonusText: bonus to <a href=showinfo:3416>Shield Booster</a> amount
+                unitID: 105
+            2:
+                bonus: 7.5
+                bonusText: bonus to <a href=showinfo:3308>Large Projectile Turret</a>
+                    tracking speed
+                unitID: 105
+34256:
+    graphicID: 48
+34257:
+    graphicID: 20951
+    radius: 250.0
+    traits:
+        -1:
+            1:
+                bonus: 100
+                bonusText: bonus to <a href=showinfo:3308>Large Projectile Turret</a>
+                    damage
+                unitID: 105
+            2:
+                bonus: 100
+                bonusText: bonus to <a href=showinfo:24348>Tractor Beam</a> range
+                    and velocity
+                unitID: 105
+            3:
+                bonus: 70
+                bonusText: reduction in <a href=showinfo:4385>Micro Jump Drive</a>
+                    reactivation delay
+                unitID: 105
+            4:
+                bonusText: Can fit <a href=showinfo:33400>Bastion modules</a>
+        3337:
+            1:
+                bonus: 5
+                bonusText: bonus to <a href=showinfo:3308>Large Projectile Turret</a>
+                    rate of fire
+                unitID: 105
+            2:
+                bonus: 10
+                bonusText: bonus to <a href=showinfo:3308>Large Projectile Turret</a>
+                    falloff
+                unitID: 105
+        28667:
+            1:
+                bonus: 7.5
+                bonusText: bonus to <a href=showinfo:3416>Shield Booster</a> amount
+                unitID: 105
+            2:
+                bonus: 7.5
+                bonusText: bonus to <a href=showinfo:3308>Large Projectile Turret</a>
+                    tracking speed
+                unitID: 105
+34258:
+    graphicID: 48
+34260:
+    graphicID: 3018
+    iconID: 1721
+34261:
+    iconID: 1007
+34264:
+    graphicID: 20039
+    iconID: 3282
+    radius: 300.0
+34265:
+    iconID: 189
+34266:
+    iconID: 3196
+    radius: 100.0
+34267:
+    iconID: 76
+34268:
+    iconID: 3196
+    radius: 100.0
+34269:
+    iconID: 76
+34272:
+    graphicID: 11219
+    iconID: 350
+34274:
+    graphicID: 11213
+    iconID: 356
+34276:
+    graphicID: 11209
+    iconID: 360
+34278:
+    graphicID: 11239
+    iconID: 376
+    radius: 10.0
+34280:
+    graphicID: 11233
+    iconID: 371
+    radius: 100.0
+34282:
+    graphicID: 11227
+    iconID: 365
+    radius: 1000.0
+34284:
+    graphicID: 11307
+    iconID: 387
+    radius: 20.0
+34286:
+    graphicID: 11301
+    iconID: 386
+    radius: 20.0
+34288:
+    graphicID: 11295
+    iconID: 381
+    radius: 200.0
+34290:
+    graphicID: 20090
+    iconID: 1345
+34292:
+    graphicID: 20085
+    iconID: 3241
+34294:
+    graphicID: 20074
+    iconID: 170
+34296:
+    graphicID: 3534
+    radius: 50.0
+    soundID: 12
+34299:
+    graphicID: 2301
+    radius: 600.0
+    soundID: 11
+34300:
+    graphicID: 2301
+    radius: 600.0
+    soundID: 11
+34301:
+    graphicID: 1680
+    radius: 205.0
+    soundID: 20177
+34302:
+    graphicID: 2368
+    radius: 800.0
+34303:
+    graphicID: 2007
+    radius: 1226.0
+34304:
+    graphicID: 2301
+    radius: 600.0
+34305:
+    graphicID: 1680
+    radius: 205.0
+    soundID: 20177
+34306:
+    iconID: 3196
+    radius: 100.0
+34307:
+    iconID: 76
+34308:
+    iconID: 3196
+    radius: 100.0
+34309:
+    iconID: 76
+34311:
+    iconID: 21380
+34312:
+    iconID: 21381
+34313:
+    iconID: 21382
+34314:
+    iconID: 21383
+34315:
+    graphicID: 3534
+    radius: 508.0
+34316:
+    graphicID: 3567
+    radius: 7684.0

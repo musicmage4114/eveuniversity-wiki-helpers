@@ -21,8 +21,8 @@ This example is based on the hyperion SDE.
 
 Extract the `yaml` files from the SDE
 ```bash
-curl -L -O http://cdn1.eveonline.com/data/Hyperion_1.0_101505_db.zip
-unzip -d /tmp/sde Hyperion_1.0_101505_db.zip
+curl -L -O http://cdn1.eveonline.com/data/Phoebe_1.0_107269_db.zip
+unzip -d /tmp/sde Phoebe_1.0_107269_db.zip
 cp /tmp/sde/*.yaml sde
 ```
 
