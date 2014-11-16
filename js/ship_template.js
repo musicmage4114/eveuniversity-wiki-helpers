@@ -404,6 +404,10 @@ function getShip(db, shipID, override) {
             obj['capacitor'] = valStr + " " + unitName;
             break;
         }
+        case "upgradeCapacity": {
+            obj['rigs_calibration'] = valStr;
+            break;
+        }
         case "hiSlots": {
             obj['highs'] = valStr;
             break;
@@ -414,6 +418,14 @@ function getShip(db, shipID, override) {
         }
         case "lowSlots": {
             obj['lows'] = valStr;
+            break;
+        }
+        case "rigSlots": {
+            obj['rigs_count'] = valStr;
+            break;
+        }
+        case "rigSize": {
+            obj['rigs_size'] = valStr;
             break;
         }
         case "turretSlotsLeft": {
@@ -703,7 +715,7 @@ function buildString(obj) {
         "armorem", "armorexp", "armorkin", "armortherm", "maxvelocity", "inertia", "warpspeed", "warptime",
         "targetrange", "sigradius", "maxlockedtargets", "sensortype", "sensorvalue", "scanres", "reqskills",
         "totaltraintime", "forumlinks", "wikireferences", "externallinks", "highlights1", "highlights2",
-        "highlights3", "highlights4"];
+        "highlights3", "highlights4", "rigs_size", "rigs_count", "rigs_calibration"];
     var str = '<onlyinclude>{{{{#if:{{{mode|}}}|{{#switch:{{{mode}}}|box=ShipBoxLarge|#default=ShipBoxTooltip}}|ShipArticle}} <!--  Template marker : DON\'T EDIT LINE -->\n\
  <!-----------------------------------------------------------\n\
  * SHIP ATTRIBUTES SECTION (last update : ' + new Date().toLocaleDateString() + ')\n\
