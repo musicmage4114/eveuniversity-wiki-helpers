@@ -621,6 +621,17 @@ function getShip(db, shipID, override) {
         obj['faction'] = 'Minmatar Republic';
     }
 
+    // Rig sizes in the SDE are numbers, but we want descriptive strings
+    if (obj['rigs_size'] == '1') {
+        obj['rigs_size'] = 'Small';
+    } else if (obj['rigs_size'] == '2') {
+        obj['rigs_size'] = 'Medium';
+    } else if (obj['rigs_size'] == '3') {
+        obj['rigs_size'] = 'Large';
+    } else if (obj['rigs_size'] == '4') {
+        obj['rigs_size'] = 'X-Large';
+    }
+
     if (obj['_techLevel'] != null && parseInt(obj['_techLevel']) != 1) {
         obj['tech'] = obj['_techLevel'];
     }
