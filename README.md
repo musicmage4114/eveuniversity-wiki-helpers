@@ -16,7 +16,7 @@ These files originally are posted on the [community-development-toolkit][].
 To update the json files, I download them from the [evenumbers-export][].
 To update the yaml files, I download them from the community develepment toolkit, and extract and update the yaml files.
 This example is based on the hyperion SDE.
-[community-development-toolkit]: http://cdn1.eveonline.com/data/Hyperion_1.0_101505_db.zip
+[community-development-toolkit]: https://developers.eveonline.com/resource/static-data-export
 [evenumbers-export]: http://www.evenumbers.net/downloads/sde/json/tables_json.zip
 
 Extract the `yaml` files from the SDE
@@ -38,6 +38,16 @@ Since the tool doesn't need all of the json files, I only check in the ones that
 Git
 ---
 Since I'm using github to host the webpages, I just push to the gh-pages branch, and don't bother with any other branch.
+
+Updating Data from Fuzzwork SQL
+-------------------------------
+```
+for i in dgmAttributeTypes dgmTypeAttributes eveUnits invMarketGroups invMetaTypes invTypes trnTranslationColumns trnTranslations
+do
+  curl -O https://www.fuzzwork.co.uk/dump/phoebe-1.0-107269/$i.sql.bz2
+  bunzip2 $i.sql.bz2
+done
+```
 
 Updating Data from MySQL
 ------------------------
