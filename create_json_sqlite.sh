@@ -40,7 +40,8 @@ ${select_stmt}
 .quit
 EOF
     echo "{\n\"RECORDS\":[\n" > sde/${tableName}.json
-    cat /tmp/${tableName}.out >> sde/${tableName}.json
+    # trim the trailing comma on the last record from the dump - non-ascii characters require the LANG=C
+    LANG=C sed -e '$s/,$//' < /tmp/${tableName}.out >> sde/${tableName}.json 
     echo "\n]}\n" >> sde/${tableName}.json
     return 0
 }
@@ -72,7 +73,8 @@ function get_select_stmt2() {
                 ;;
             "unitName" | "displayName" | "description" | "attributeName" | "marketGroupName" | "typeName" | "tableName" | "columnName" | "masterID" | "languageID" | "text" )
                 fname="\"${field}\":%s";
-                fvalue="coalesce(nullif(printf(\"%Q\", replace(replace(${field}, X'0A', '\n'), X'0D', '\r')), 'NULL'),\"null\")";
+                # escape the newline, carriage return, and quote characters - if the value is actually (NULL), this will be wrong
+                fvalue="coalesce(nullif(printf('\"%q\"', replace(replace(replace(${field}, X'0A', '\n'), X'0D', '\r'), X'22', X'5C22')), '\"(NULL)\"'),\"null\")";
                 ;;
             *)
                 echo "Warning: unknown field ${field}"
