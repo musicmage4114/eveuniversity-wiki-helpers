@@ -213,7 +213,7 @@ function getSkill(db, skillID) {
     var obj = {};
     db['dgmTypeAttributes']({'typeID': skillID}).each(function (typeAttribute) {
         var attributeType = db['dgmAttributeTypes']({'attributeID': typeAttribute.attributeID}).first();
-        var attributeValue = (typeAttribute.valueInt != null) ? typeAttribute.valueInt : typeAttribute.valueFloat;
+        var attributeValue = (typeAttribute.valueFloat != null) ? typeAttribute.valueFloat : typeAttribute.valueInt;
         switch (attributeType.attributeName) {
         case "primaryAttribute": {
             obj['primaryAttribute'] = getSkillAttribute(db, attributeValue);
@@ -381,7 +381,7 @@ function getShip(db, shipID, override) {
     var obj = {};
     db['dgmTypeAttributes']({'typeID': shipID}).each(function (typeAttribute) {
         var attributeType = db['dgmAttributeTypes']({'attributeID': typeAttribute.attributeID}).first();
-        var attributeValue = (typeAttribute.valueInt != null) ? typeAttribute.valueInt : typeAttribute.valueFloat;
+        var attributeValue = (typeAttribute.valueFloat != null) ? typeAttribute.valueFloat : typeAttribute.valueInt;
         var unitName = '';
         if (attributeType.unitID != null) {
             unitName = db['eveUnits']({'unitID': attributeType.unitID}).first().displayName;
@@ -595,6 +595,7 @@ function getShip(db, shipID, override) {
     })
     obj['shipid'] = shipID;
     obj['shipname'] = getTranslation(db, "dbo.invTypes", "typeName", shipID);
+    // obj['shipimg'] = 'http://images.cdn1.eveonline.com/Render/' + shipID + '_256.png';
     obj['shipimg'] = obj['shipname'] + '.jpg';
     obj['caption'] = obj['shipname'];
 
