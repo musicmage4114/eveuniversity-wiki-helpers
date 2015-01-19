@@ -62,6 +62,8 @@ function get_select_stmt2() {
     fvalues=""
     shift
     shift
+    # this will be used as a placeholder to determine if the database value is null
+    random_string=K95c26KF
     for field in $*
     do
         fname=""
@@ -73,8 +75,8 @@ function get_select_stmt2() {
                 ;;
             "unitName" | "displayName" | "description" | "attributeName" | "marketGroupName" | "typeName" | "tableName" | "columnName" | "masterID" | "languageID" | "text" )
                 fname="\"${field}\":%s";
-                # escape the newline, carriage return, and quote characters - if the value is actually (NULL), this will be wrong
-                fvalue="coalesce(nullif(printf('\"%q\"', replace(replace(replace(${field}, X'0A', '\n'), X'0D', '\r'), X'22', X'5C22')), '\"(NULL)\"'),\"null\")";
+                # escape the newline, carriage return, and quote characters - if the value is actually the empty string, this will be wrong
+                fvalue="coalesce(nullif(printf('\"%s\"', replace(replace(replace(coalesce(${field},'${random_string}'), X'0A', '\n'), X'0D', '\r'), X'22', X'5C22')), '\"${random_string}\"'),\"null\")";
                 ;;
             *)
                 echo "Warning: unknown field ${field}"
